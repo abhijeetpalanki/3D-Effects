@@ -1,0 +1,23 @@
+.blob__wrapper {
+  height: 100%;
+  background: #250821;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blob__wrapper section {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.blob__wrapper section .blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+.blob__wrapper section .blob:nth-child(2) {
+  filter: blur(50px);
+}
