@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, Background, GlowingCube, Blob, Particles, Water, ImageSlider } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, animatedBackground, glowingCube, blob, particles, bubbles } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, animatedBackground, glowingCube, blob, particles, bubbles, imageSlider } from "./image-imports";
 
 function App() {  
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -86,7 +86,7 @@ function App() {
            <Modal component={<Water />} closeModal={setOpenWaterModal} />
         }
 
-        <Card image={bubbles} title="Image Slider" description="Also known as image carousels or slideshows are a convenient way to display multiple images, videos, or graphics" setOpenModal={setOpenImageSliderModal} />
+        <Card image={imageSlider} title="Image Slider" description="Also known as image carousels or slideshows are a convenient way to display multiple images, videos, or graphics" setOpenModal={setOpenImageSliderModal} />
         {
            openImageSliderModal && 
            <Modal component={<ImageSlider />} closeModal={setOpenImageSliderModal} />
