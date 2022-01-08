@@ -1,0 +1,76 @@
+.smiley__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #20152d;
+}
+
+.smiley__wrapper .rating {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.smiley__wrapper .rating input {
+  display: none;
+}
+
+.smiley__wrapper .rating label {
+  position: relative;
+  width: 0;
+  height: 200px;
+  cursor: pointer;
+  transition: 0.5s;
+  filter: grayscale(1);
+  text-align: center;
+  opacity: 0;
+}
+
+.smiley__wrapper .rating label img {
+  width: 250px;
+  height: auto;
+  padding: 15px;
+}
+
+.smiley__wrapper .rating:hover label {
+  width: 250px;
+  opacity: 0.2;
+}
+
+.smiley__wrapper .rating input:hover + label,
+.smiley__wrapper .rating input:checked + label {
+  filter: grayscale(0);
+  opacity: 1;
+  width: 250px;
+}
+
+.smiley__wrapper .rating label h4 {
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-50px) scale(0);
+  transition: 0.5s;
+}
+
+.smiley__wrapper .rating input:hover + label h4,
+.smiley__wrapper .rating input:checked + label h4 {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.smiley__wrapper .rating .text {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  width: 500px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 26px;
+}

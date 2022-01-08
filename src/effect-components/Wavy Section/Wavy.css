@@ -1,0 +1,123 @@
+.wavy__wrapper {
+  height: 100%;
+}
+
+.wavy__wrapper section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wavy__wrapper section .wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4973ff;
+}
+
+.wavy__wrapper section .wave span {
+  position: absolute;
+  height: 250vh;
+  width: 250vh;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.wavy__wrapper section .wave span:nth-child(1) {
+  animation: animate-wave 5s linear infinite;
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+}
+
+.wavy__wrapper section .wave span:nth-child(2) {
+  animation: animate-wave 10s linear infinite;
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+}
+
+.wavy__wrapper section .wave span:nth-child(3) {
+  animation: animate-wave 15s linear infinite;
+  border-radius: 42.5%;
+  background: rgba(20, 20, 20, 0.5);
+}
+
+@keyframes animate-wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+.wavy__wrapper section .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 5em;
+}
+
+.wavy__wrapper section .content h2 {
+  font-size: 5em;
+  text-align: center;
+}
+
+.wavy__wrapper section .content h2 span {
+  position: relative;
+  display: inline-flex;
+  color: #03a9f4;
+}
+
+.wavy__wrapper section .content h2 span:nth-child(odd) {
+  color: var(--gray-300);
+  line-height: 1em;
+  overflow: hidden;
+  letter-spacing: -1em;
+  transition: 0.5s ease-in-out;
+}
+
+.wavy__wrapper section .content h2:hover span:nth-child(odd) {
+  letter-spacing: 0;
+}
+
+.wavy__wrapper section .content h2 span:nth-child(2) {
+  margin-right: 10px;
+}
+
+.wavy__wrapper section .content h2 span:nth-child(2)::after {
+  content: "2";
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  font-size: 0.25em;
+}
+
+.wavy__wrapper section .content h2 i {
+  transform: translate(-50%);
+  font-size: 30px;
+  font-weight: 400;
+  font-style: initial;
+  line-height: 1em;
+}
+
+.wavy__wrapper section .content h2 i::before {
+  content: "Oxygen";
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  display: initial;
+  transition: 0.5s;
+}
+
+.wavy__wrapper section .content h2:hover i::before {
+  opacity: 0;
+  letter-spacing: 2em;
+}

@@ -1,0 +1,144 @@
+.rocket__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeef0;
+}
+
+.cloud-0 {
+  --i: 0;
+}
+
+.cloud-1 {
+  --i: 1;
+}
+
+.cloud-2 {
+  --i: 2;
+}
+
+.cloud-3 {
+  --i: 3;
+}
+
+.cloud-4 {
+  --i: 4;
+}
+
+.cloud-5 {
+  --i: 5;
+}
+
+.cloud-6 {
+  --i: 6;
+}
+
+.cloud-7 {
+  --i: 7;
+}
+
+.rocket__wrapper .loader {
+  position: relative;
+  display: flex;
+}
+
+.rocket__wrapper .loader span {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background: #eaeef0;
+  border: 6px solid #eaeef0;
+  border-radius: 50%;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
+    8px 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.rocket__wrapper .loader span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 15px rgba(255, 255, 255, 1);
+}
+
+.rocket__wrapper .loader span::after {
+  content: "";
+  position: absolute;
+  inset: 70px;
+  background: #eaeef0;
+  border: 3px solid #eaeef0;
+  border-radius: 50%;
+  box-shadow: -8px -8px 25px rgba(255, 255, 255, 1),
+    8px 8px 25px rgba(0, 0, 0, 0.25), inset 3px 3px 10px rgba(0, 0, 0, 0.15),
+    inset -1px -1px 15px rgba(255, 255, 255, 1);
+}
+
+.rocket__wrapper .loader span i {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  filter: blur(5px);
+  background: linear-gradient(#42abff, #ff4f8b, #ffeb3b);
+  animation: rocket-boundary 1s linear infinite;
+}
+
+@keyframes rocket-boundary {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rocket {
+  position: absolute;
+  inset: 50px;
+  z-index: 10;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rocket .fa-rocket {
+  position: absolute;
+  color: #ff518c;
+  font-size: 8.5em;
+  -webkit-text-stroke: 2px #000;
+  animation: animate-rocket 0.2s linear infinite;
+}
+
+@keyframes animate-rocket {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(-45deg);
+  }
+  50% {
+    transform: translate(0, 3px) rotate(-45deg);
+  }
+}
+
+.rocket .fa-cloud {
+  position: relative;
+  top: calc(35px * var(--i));
+  left: calc(45px * var(--i));
+  font-size: 4em;
+  color: white;
+  -webkit-text-stroke: 2px #000;
+  animation: animate-clouds 1s linear infinite;
+  animation-delay: calc(-0.5s * var(--i));
+}
+
+@keyframes animate-clouds {
+  0% {
+    transform: translateY(calc(-35 * 5px));
+  }
+  100% {
+    transform: translateY(calc(35 * 5px));
+  }
+}

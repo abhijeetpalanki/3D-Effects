@@ -3,9 +3,9 @@ import './Clock.css';
 
 const Clock = () => {
     const [date, setDate] = useState(new Date());
-    let timeId = 0;
-
+    
     useEffect(() => {
+        let timeId = 0;
         timeId = setInterval(() => {
             setDate(new Date());
         }, 1000);

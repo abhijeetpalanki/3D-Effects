@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, Background, GlowingCube, Blob, Particles, Water, ImageSlider } from "./component-imports";
+import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, ImageSlider, Rocket, Wavy, Smiley, Box } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, animatedBackground, glowingCube, blob, particles, bubbles, imageSlider } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox } from "./image-imports";
 
 function App() {  
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -11,12 +11,15 @@ function App() {
   const [openLeavesModal, setOpenLeavesModal] = useState(false); 
   const [openLoaderModal, setOpenLoaderModal] = useState(false); 
   const [openSocialMediaIconsModal, setOpenSocialMediaIconsModal] = useState(false); 
-  const [openAnimatedBackgroundModal, setOpenAnimatedBackgroundModal] = useState(false); 
   const [openGlowingCubeModal, setOpenGlowingCubeModal] = useState(false); 
   const [openBlobModal, setOpenBlobModal] = useState(false); 
   const [openParticlesModal, setOpenParticlesModal] = useState(false); 
   const [openWaterModal, setOpenWaterModal] = useState(false); 
   const [openImageSliderModal, setOpenImageSliderModal] = useState(false); 
+  const [openRocketModal, setOpenRocketModal] = useState(false); 
+  const [openWaveModal, setOpenWaveModal] = useState(false); 
+  const [openSmileyModal, setOpenSmileyModal] = useState(false); 
+  const [openBoxModal, setOpenBoxModal] = useState(false); 
 
   return (
       <div className="cards"> 
@@ -26,7 +29,7 @@ function App() {
           <Modal component={<GlassBusinessCard />} closeModal={setOpenBusinessCardModal} />
         }
 
-         <Card image={yearChanger} title="Happy New Year" description="Animation gradually changes from 2021 to 2022 on hover" setOpenModal={setOpenYearChangerModal} />
+        <Card image={yearChanger} title="Happy New Year" description="Animation gradually changes from 2021 to 2022 on hover" setOpenModal={setOpenYearChangerModal} />
         {
             openYearChangerModal && 
             <Modal component={<YearChanger />} closeModal={setOpenYearChangerModal} />
@@ -54,12 +57,6 @@ function App() {
         {
             openSocialMediaIconsModal && 
             <Modal component={<SocialMediaIcons />} closeModal={setOpenSocialMediaIconsModal} />
-        }
-
-        <Card image={animatedBackground} title="Animated Background" description="Objects floating in background animation which gradually changes from one style to another" setOpenModal={setOpenAnimatedBackgroundModal} />
-        {
-            openAnimatedBackgroundModal && 
-            <Modal component={<Background />} closeModal={setOpenAnimatedBackgroundModal} />
         }
         
         <Card image={glowingCube} title="Glowing Cube" description="Ambient light 3D glowing cube with text animation effect" setOpenModal={setOpenGlowingCubeModal} />
@@ -90,6 +87,30 @@ function App() {
         {
            openImageSliderModal && 
            <Modal component={<ImageSlider />} closeModal={setOpenImageSliderModal} />
+        }
+
+        <Card image={rocket} title="Rocket" description="Also known as image carousels or slideshows are a convenient way to display multiple images, videos, or graphics" setOpenModal={setOpenRocketModal} />
+        {
+           openRocketModal && 
+           <Modal component={<Rocket />} closeModal={setOpenRocketModal} />
+        }
+
+        <Card image={oxygen} title="Oxygen Wave" description="A water wave with oxygen text hover effect" setOpenModal={setOpenWaveModal} />
+        {
+           openWaveModal && 
+           <Modal component={<Wavy />} closeModal={setOpenWaveModal} />
+        }
+
+        <Card image={smileyRatingBar} title="Smiley Rating Bar" description="A simple rating bar which displays animated smileys as rating icon" setOpenModal={setOpenSmileyModal} />
+        {
+           openSmileyModal && 
+           <Modal component={<Smiley />} closeModal={setOpenSmileyModal} />
+        }
+
+        <Card image={quoteBox} title="Quote Of The Day" description="Creative design with hover animation effect" setOpenModal={setOpenBoxModal} />
+        {
+           openBoxModal && 
+           <Modal component={<Box />} closeModal={setOpenBoxModal} />
         }
       </div>
   );

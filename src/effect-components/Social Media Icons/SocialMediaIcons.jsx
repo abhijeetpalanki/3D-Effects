@@ -6,7 +6,7 @@ const SocialMediaIcons = () => {
         <div className="social__wrapper">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/abhijeetpalanki/" target="_blank" rel="noreferrer">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -15,7 +15,7 @@ const SocialMediaIcons = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://twitter.com/abhijeetpalanki" target="_blank" rel="noreferrer">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -24,16 +24,16 @@ const SocialMediaIcons = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://github.com/abhijeetpalanki" target="_blank" rel="noreferrer">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                        <span className="fa fa-whatsapp"></span>
+                        <span className="fa fa-github"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/abhijeetpalanki/" target="_blank" rel="noreferrer">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -42,7 +42,7 @@ const SocialMediaIcons = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/abhi.your.pal/" target="_blank" rel="noreferrer">
                         <span></span>
                         <span></span>
                         <span></span>
