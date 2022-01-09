@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, ImageSlider, Rocket, Wavy, Smiley, Box } from "./component-imports";
+import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, ImageSlider, Rocket, Wavy, Smiley, Box, Button } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons } from "./image-imports";
 
 function App() {  
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -20,6 +20,7 @@ function App() {
   const [openWaveModal, setOpenWaveModal] = useState(false); 
   const [openSmileyModal, setOpenSmileyModal] = useState(false); 
   const [openBoxModal, setOpenBoxModal] = useState(false); 
+  const [openButtonModal, setOpenButtonModal] = useState(false); 
 
   return (
       <div className="cards"> 
@@ -111,6 +112,12 @@ function App() {
         {
            openBoxModal && 
            <Modal component={<Box />} closeModal={setOpenBoxModal} />
+        }
+
+        <Card image={buttons} title="Button Hover Effects" description="Various hover effects and animations for buttons" setOpenModal={setOpenButtonModal} />
+        {
+           openButtonModal && 
+           <Modal component={<Button />} closeModal={setOpenButtonModal} />
         }
       </div>
   );

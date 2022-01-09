@@ -13,5 +13,6 @@ import rocket from './images/rocket.png';
 import oxygen from './images/oxygen.png';
 import smileyRatingBar from './images/smiley-rating-bar.png';
 import quoteBox from './images/quote-box.png';
+import buttons from './images/buttons.png';
 
-export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox };
+export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons };

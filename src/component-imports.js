@@ -16,5 +16,6 @@ import Rocket from './effect-components/Rocket/Rocket';
 import Wavy from './effect-components/Wavy Section/Wavy';
 import Smiley from './effect-components/Smiley Bar/Smiley';
 import Box from './effect-components/Creative Box/Box';
+import Button from './effect-components/Button Hover/Button';
 
-export { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, ImageSlider, Rocket, Wavy, Smiley, Box };
+export { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, ImageSlider, Rocket, Wavy, Smiley, Box, Button };

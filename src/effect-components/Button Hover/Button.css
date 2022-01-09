@@ -1,0 +1,290 @@
+.button__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #09050a;
+}
+
+.button__wrapper .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.button__wrapper .container .btn1,
+.button__wrapper .container .btn2,
+.button__wrapper .container .btn3 {
+  position: relative;
+  width: 155px;
+  height: 70px;
+  margin: 50px;
+}
+
+.button__wrapper .container .btn1 a {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: white;
+  z-index: 1;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+}
+
+.button__wrapper .container .btn1:hover a {
+  letter-spacing: 3px;
+}
+
+.button__wrapper .container .btn1 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+
+.button__wrapper .container .btn1:hover a::before {
+  transform: skewX(45deg) translateX(200%);
+}
+
+.button__wrapper .container .btn1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.button__wrapper .container .btn1:hover::before {
+  bottom: 6px;
+  height: 50%;
+  width: 70%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.button__wrapper .container .btn1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.button__wrapper .container .btn1:hover::after {
+  top: 6px;
+  height: 50%;
+  width: 70%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.button__wrapper .container .btn1::before,
+.button__wrapper .container .btn1::after {
+  background: #ff1f71;
+  box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
+}
+
+.button__wrapper .container .btn2 a {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.4);
+  background: #262c37;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+.button__wrapper .container .btn2 a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.button__wrapper .container .btn2 a span {
+  display: block;
+  position: absolute;
+  background: limegreen;
+}
+
+.button__wrapper .container .btn2 a span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.button__wrapper .container .btn2 a:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.button__wrapper .container .btn2 a span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.button__wrapper .container .btn2 a:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.button__wrapper .container .btn2 a span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.button__wrapper .container .btn2 a:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.button__wrapper .container .btn2 a span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.button__wrapper .container .btn2 a:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.dynamic-link {
+  --clr: #00ccff;
+  --i: 0;
+}
+
+.button__wrapper .container .btn3 a {
+  position: relative;
+  padding: 20px 60px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0004);
+}
+
+.button__wrapper .container .btn3 a:hover {
+  background: var(--clr);
+  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr),
+    0 0 100px var(--clr);
+}
+
+.button__wrapper .container .btn3 a::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 400px;
+  background: var(--clr);
+  transition: 1s;
+  animation: animate-button 2s linear infinite;
+  animation-delay: calc(0.33s * var(--i));
+}
+
+.button__wrapper .container .btn3 a:hover:before {
+  width: 120%;
+}
+
+@keyframes animate-button {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button__wrapper .container .btn3 a::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #0e1538;
+  transition: 0.5s;
+}
+
+.button__wrapper .container .btn3 a:hover:after {
+  background: var(--clr);
+}
+
+.button__wrapper .container .btn3 a span {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5em;
+  color: white;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+
+.button__wrapper .container .btn3 a:hover span {
+  opacity: 1;
+}
