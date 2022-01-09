@@ -71,6 +71,46 @@ body {
   padding: 2rem;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-700);
+  padding-top: 20px;
+  font-weight: 900;
+  font-size: 4em;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: 0.1vw #383d52;
+  text-transform: uppercase;
+}
+
+.header::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: attr(data-text);
+  width: 0;
+  height: 10%;
+  color: var(--primary-dark);
+  -webkit-text-stroke: 0vw #383d52;
+  overflow: hidden;
+  animation: animate-header 6s linear infinite;
+}
+
+@keyframes animate-header {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 20%;
+  }
+}
+
 .card-wrapper {
   overflow: hidden;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -120,7 +160,7 @@ body {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: var(--gradient-color-5);
+  background: var(--primary-dark);
   cursor: pointer;
 }
 

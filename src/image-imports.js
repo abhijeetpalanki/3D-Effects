@@ -14,5 +14,8 @@ import oxygen from './images/oxygen.png';
 import smileyRatingBar from './images/smiley-rating-bar.png';
 import quoteBox from './images/quote-box.png';
 import buttons from './images/buttons.png';
+import glassCard from './images/glass-card.png';
+import shutter from './images/shutter.png';
+import brothers from './images/brothers.png';
 
-export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons };
+export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers };

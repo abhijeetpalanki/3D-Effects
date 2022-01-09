@@ -17,5 +17,8 @@ import Wavy from './effect-components/Wavy Section/Wavy';
 import Smiley from './effect-components/Smiley Bar/Smiley';
 import Box from './effect-components/Creative Box/Box';
 import Button from './effect-components/Button Hover/Button';
+import GlassCard from './effect-components/Glass Card/GlassCard';
+import Shutter from './effect-components/Shutter/Shutter';
+import Greeting from './effect-components/Greeting/Greeting';
 
-export { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, ImageSlider, Rocket, Wavy, Smiley, Box, Button };
+export { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, ImageSlider, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting };
