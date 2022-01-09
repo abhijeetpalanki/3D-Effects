@@ -20,6 +20,12 @@ const Button = () => {
                 <div className="btn3">
                     <a href="#" className="dynamic-link"><span>Button</span></a>
                 </div>
+                <div className="btn4">
+                    <a href="#">
+                        <span>Button</span>
+                        <span>Button</span>
+                    </a>
+                </div>
             </div>
         </div>
     )
