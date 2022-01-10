@@ -111,6 +111,118 @@ body {
   }
 }
 
+@keyframes animate-header-1400 {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 30%;
+  }
+}
+
+@keyframes animate-header-1000 {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 40%;
+  }
+}
+
+@keyframes animate-header-750 {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 50%;
+  }
+}
+
+@keyframes animate-header-650 {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 65%;
+  }
+}
+
+@keyframes animate-header-550 {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 80%;
+  }
+}
+
+@keyframes animate-header-450 {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .header::before {
+    animation: animate-header-1400 6s linear infinite;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header::before {
+    animation: animate-header-1000 6s linear infinite;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header::before {
+    animation: animate-header-750 6s linear infinite;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header::before {
+    animation: animate-header-650 6s linear infinite;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header::before {
+    animation: animate-header-550 6s linear infinite;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    font-size: 3em;
+  }
+
+  .header::before {
+    animation: animate-header-450 6s linear infinite;
+  }
+}
+
 .card-wrapper {
   overflow: hidden;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);

@@ -128,3 +128,178 @@ image-slider__wrapper {
 .slide-two button {
   background: linear-gradient(to right, #feb154, #ffd255);
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .slide-one .container .row {
+    margin: 50% 0;
+    overflow: visible;
+  }
+
+  .slide-one .container .row div h1 {
+    font-size: 1.5em;
+  }
+
+  .slide-one .container .row div p {
+    font-size: 1em;
+    margin: 30px 0;
+  }
+
+  .carousel-item button {
+    font-size: 10px;
+  }
+
+  .img-box {
+    width: 250px;
+  }
+
+  .pic-two {
+    width: 50px;
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+  }
+
+  .pic-three {
+    width: 38px;
+    left: 80px;
+    bottom: 10px;
+  }
+
+  .pic-four {
+    width: 80px;
+    top: -250px;
+  }
+
+  .pic-five {
+    width: 55px;
+    top: -120px;
+  }
+
+  .pic-six {
+    width: 80px;
+    right: 80px;
+    top: -10px;
+  }
+
+  .slide-two .container .row {
+    margin: 58% 0;
+  }
+
+  .slide-two .container .row div h1 {
+    font-size: 1.5em;
+  }
+
+  .slide-two .container .row div p {
+    font-size: 1em;
+    margin: 30px 0;
+  }
+
+  .img-two {
+    width: 100px;
+  }
+
+  .img-three {
+    width: 35px;
+  }
+
+  .img-four {
+    width: 30px;
+  }
+
+  .img-five {
+    width: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .slide-one .container .row {
+    margin: 44% 0;
+    overflow: visible;
+  }
+
+  .slide-one .container .row div h1 {
+    font-size: 1.5em;
+  }
+
+  .slide-one .container .row div p {
+    font-size: 1em;
+    margin: 30px 0;
+  }
+
+  .carousel-item button {
+    font-size: 10px;
+  }
+
+  .img-box {
+    width: 250px;
+  }
+
+  .pic-two {
+    width: 50px;
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+  }
+
+  .pic-three {
+    width: 38px;
+    left: 80px;
+    bottom: 10px;
+  }
+
+  .pic-four {
+    width: 80px;
+    top: -250px;
+  }
+
+  .pic-five {
+    width: 55px;
+    top: -120px;
+  }
+
+  .pic-six {
+    width: 80px;
+    right: 80px;
+    top: -10px;
+  }
+
+  .slide-two .container .row {
+    margin: 46% 0;
+  }
+
+  .slide-two .container .row div h1 {
+    font-size: 1.5em;
+  }
+
+  .slide-two .container .row div p {
+    font-size: 1em;
+    margin: 30px 0;
+  }
+
+  .img-two {
+    width: 100px;
+  }
+
+  .img-three {
+    width: 35px;
+  }
+
+  .img-four {
+    width: 30px;
+  }
+
+  .img-five {
+    width: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .slide-one .container .row {
+    margin: 24% 0;
+    overflow: visible;
+  }
+
+  .slide-two .container .row {
+    margin: 26.5% 0;
+  }
+}

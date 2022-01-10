@@ -142,3 +142,41 @@
     transform: translateY(calc(35 * 5px));
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .rocket__wrapper .loader span {
+    width: 250px;
+    height: 250px;
+  }
+
+  .rocket__wrapper .loader span::after {
+    inset: 35px;
+  }
+
+  .rocket .fa-rocket {
+    font-size: 4em;
+  }
+
+  .rocket .fa-cloud {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .rocket__wrapper .loader span {
+    width: 350px;
+    height: 350px;
+  }
+
+  .rocket__wrapper .loader span::after {
+    inset: 45px;
+  }
+
+  .rocket .fa-rocket {
+    font-size: 5em;
+  }
+
+  .rocket .fa-cloud {
+    font-size: 3em;
+  }
+}

@@ -109,3 +109,57 @@
   ion-icon {
   font-size: 1.4em;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .business-card__body .business-card__card {
+    width: 250px;
+    height: 500px;
+  }
+
+  .business-card__body .business-card__card .business-card__content {
+    flex-direction: column;
+  }
+
+  .business-card__body
+    .business-card__card
+    .business-card__content
+    .business-card__details
+    h3 {
+    font-size: 1.5em;
+  }
+
+  .business-card__body
+    .business-card__card
+    .business-card__content
+    .business-card__details
+    ion-icon {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .business-card__body .business-card__card {
+    width: 400px;
+    height: 500px;
+  }
+
+  .business-card__body .business-card__card .business-card__content {
+    flex-direction: column;
+  }
+
+  .business-card__body
+    .business-card__card
+    .business-card__content
+    .business-card__details
+    h3 {
+    font-size: 2em;
+  }
+
+  .business-card__body
+    .business-card__card
+    .business-card__content
+    .business-card__details
+    ion-icon {
+    font-size: 2em;
+  }
+}

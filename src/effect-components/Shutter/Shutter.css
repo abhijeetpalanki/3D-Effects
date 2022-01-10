@@ -110,3 +110,19 @@
   box-sizing: border-box;
   backdrop-filter: blur(15px);
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .shutter__wrapper section div #rangeValue {
+    font-size: 5em;
+  }
+
+  .shutter__wrapper section div .range {
+    width: 250px;
+    height: 15px;
+  }
+
+  .shutter__wrapper section div .range::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
+}

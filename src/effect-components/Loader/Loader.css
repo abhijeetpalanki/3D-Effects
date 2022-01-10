@@ -68,3 +68,23 @@
     transform: translateX(50px) scale(1);
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .loader__wrapper .loader {
+    width: 50%;
+  }
+  .loader__wrapper .loader span {
+    width: 35px;
+    margin: 0 -35px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .loader__wrapper .loader {
+    width: 60%;
+  }
+  .loader__wrapper .loader span {
+    width: 50px;
+    margin: 0 -50px;
+  }
+}

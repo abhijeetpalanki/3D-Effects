@@ -74,3 +74,81 @@
   white-space: nowrap;
   font-size: 26px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .smiley__wrapper .rating .text {
+    font-size: 10px;
+  }
+
+  .smiley__wrapper .rating label {
+    height: 50px;
+  }
+  .smiley__wrapper .rating:hover label {
+    width: 50px;
+  }
+
+  .smiley__wrapper .rating input:hover + label,
+  .smiley__wrapper .rating input:checked + label {
+    width: 100px;
+  }
+
+  .smiley__wrapper .rating label img {
+    width: 100px;
+  }
+
+  .smiley__wrapper .rating label h4 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .smiley__wrapper .rating .text {
+    font-size: 20px;
+  }
+
+  .smiley__wrapper .rating label {
+    height: 100px;
+  }
+  .smiley__wrapper .rating:hover label {
+    width: 80px;
+  }
+
+  .smiley__wrapper .rating input:hover + label,
+  .smiley__wrapper .rating input:checked + label {
+    width: 200px;
+  }
+
+  .smiley__wrapper .rating label img {
+    width: 200px;
+  }
+
+  .smiley__wrapper .rating label h4 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .smiley__wrapper .rating .text {
+    font-size: 25px;
+  }
+
+  .smiley__wrapper .rating label {
+    height: 100px;
+  }
+  .smiley__wrapper .rating:hover label {
+    width: 150px;
+  }
+
+  .smiley__wrapper .rating input:hover + label,
+  .smiley__wrapper .rating input:checked + label {
+    width: 150px;
+  }
+
+  .smiley__wrapper .rating label img {
+    width: 150px;
+  }
+
+  .smiley__wrapper .rating label h4 {
+    font-size: 25px;
+  }
+}

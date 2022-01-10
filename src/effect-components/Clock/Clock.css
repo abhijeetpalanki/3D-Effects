@@ -96,3 +96,40 @@
   z-index: 12;
   border-radius: 6px 6px 0 0;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .clock__body .clock {
+    width: 250px;
+    height: 250px;
+  }
+
+  .clock__body .clock .hour,
+  .hr {
+    width: 100px;
+    height: 100px;
+  }
+
+  .clock__body .clock .min,
+  .mn {
+    width: 160px;
+    height: 160px;
+  }
+
+  .clock__body .clock .sec,
+  .sc {
+    width: 190px;
+    height: 190px;
+  }
+
+  .clock__body .clock .hour .hr::before {
+    height: 70px;
+  }
+
+  .clock__body .clock .min .mn::before {
+    height: 100px;
+  }
+
+  .clock__body .clock .sec .sc::before {
+    height: 120px;
+  }
+}

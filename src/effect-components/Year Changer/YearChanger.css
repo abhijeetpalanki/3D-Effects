@@ -97,3 +97,39 @@
   background: linear-gradient(var(--primary-dark), var(--primary-hover));
   color: var(--gray-700);
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .year-changer__body {
+    gap: 10px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .year-changer__body .text::before {
+    transform: rotateY(90deg) translateX(-100px) scaleX(4.25);
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .year-changer__body {
+    gap: 10px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .year-changer__body .text::before {
+    transform: rotateY(90deg) translateX(-100px) scaleX(2.1);
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .year-changer__body {
+    gap: 10px;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .year-changer__body .text::before {
+    transform: rotateY(90deg) translateX(-100px) scaleX(1.6);
+  }
+}

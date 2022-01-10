@@ -21,3 +21,27 @@
 .blob__wrapper section .blob:nth-child(2) {
   filter: blur(50px);
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .blob__wrapper section {
+    width: 250px;
+    height: 250px;
+  }
+
+  .blob__wrapper section .blob {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .blob__wrapper section {
+    width: 450px;
+    height: 450px;
+  }
+
+  .blob__wrapper section .blob {
+    width: 450px;
+    height: 450px;
+  }
+}
