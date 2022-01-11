@@ -32,13 +32,13 @@ const Filter = () => {
             <section>
                 <ul>
                     <li className="filter-list active" data-filter="all">All</li>
-                    <li className="filter-list" data-filter="glassmorphism">Glassmorphism</li>
-                    <li className="filter-list" data-filter="buttons">Buttons</li>
-                    <li className="filter-list" data-filter="glow">Glow</li>
-                    <li className="filter-list" data-filter="text">Text</li>
                     <li className="filter-list" data-filter="abstract">Abstract</li>
+                    <li className="filter-list" data-filter="buttons">Buttons</li>
                     <li className="filter-list" data-filter="dark">Dark</li>
                     <li className="filter-list" data-filter="environment">Environment</li>
+                    <li className="filter-list" data-filter="glass">Glass</li>
+                    <li className="filter-list" data-filter="glow">Glow</li>
+                    <li className="filter-list" data-filter="text">Text</li>
                 </ul>
             </section>
         </div>

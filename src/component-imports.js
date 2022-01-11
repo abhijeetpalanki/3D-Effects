@@ -25,5 +25,7 @@ import Calculator from './effect-components/Calculator/Calculator';
 import Banner from './effect-components/Banner/Banner';
 import Menu from './effect-components/Menu/Menu';
 import Squares from './effect-components/Colorful Squares/Squares';
+import FontAwesomeIcons from './effect-components/Font Awesome Icons/FontAwesomeIcons';
+import Checkbox from './effect-components/Animated Checkbox/Checkbox';
 
-export { Card, Modal, Filter, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu, Squares };
+export { Card, Modal, Filter, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu, Squares, FontAwesomeIcons, Checkbox };

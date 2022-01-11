@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { Card, Modal, Filter, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu, Squares } from "./component-imports";
+import { Card, Modal, Filter, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu, Squares, FontAwesomeIcons, Checkbox } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox } from "./image-imports";
 
 function App() {        
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -28,13 +28,15 @@ function App() {
   const [openBannerModal, setOpenBannerModal] = useState(false); 
   const [openMenuModal, setOpenMenuModal] = useState(false); 
   const [openSquaresModal, setOpenSquaresModal] = useState(false); 
+  const [openFontAwesomeIconsModal, setOpenFontAwesomeIconsModal] = useState(false); 
+  const [openCheckboxModal, setOpenCheckboxModal] = useState(false); 
 
   return (
       <>
          <h1 data-text="Creativity" className="header">Creativity</h1>
          <Filter></Filter>
          <div className="cards"> 
-            <Card image={businessCard} title="Business Card" description="UI design that emphasises light or dark objects, placed on top of colourful backgrounds" setOpenModal={setOpenBusinessCardModal} filterItem="glassmorphism" />
+            <Card image={businessCard} title="Business Card" description="UI design that emphasises light or dark objects, placed on top of colourful backgrounds" setOpenModal={setOpenBusinessCardModal} filterItem="glass" />
             {
                openBusinessCardModal && 
                <Modal component={<GlassBusinessCard />} closeModal={setOpenBusinessCardModal} />
@@ -130,7 +132,7 @@ function App() {
                <Modal component={<GlassCard />} closeModal={setOpenGlassCardModal} />
             }
 
-            <Card image={shutter} title="Glass Shutter" description="Shutter effect based on progress bar" setOpenModal={setOpenShutterModal} filterItem="glassmorphism" />
+            <Card image={shutter} title="Glass Shutter" description="Shutter effect based on progress bar" setOpenModal={setOpenShutterModal} filterItem="glass" />
             {
                openShutterModal && 
                <Modal component={<Shutter />} closeModal={setOpenShutterModal} />
@@ -148,7 +150,7 @@ function App() {
                <Modal component={<Parallax />} closeModal={setOpenParallaxModal} />
             }
 
-            <Card image={calculator} title="Calculator" description="Basic functional calculator with animations" setOpenModal={setOpenCalculatorModal} filterItem="glassmorphism" />
+            <Card image={calculator} title="Calculator" description="Basic functional calculator with animations" setOpenModal={setOpenCalculatorModal} filterItem="glass" />
             {
                openCalculatorModal && 
                <Modal component={<Calculator />} closeModal={setOpenCalculatorModal} />
@@ -160,7 +162,7 @@ function App() {
                <Modal component={<Banner />} closeModal={setOpenBannerModal} />
             }
 
-            <Card image={menu} title="Circular Menu" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenMenuModal} filterItem="glassmorphism" />
+            <Card image={menu} title="Circular Menu" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenMenuModal} filterItem="glass" />
             {
                openMenuModal && 
                <Modal component={<Menu />} closeModal={setOpenMenuModal} />
@@ -170,6 +172,18 @@ function App() {
             {
                openSquaresModal && 
                <Modal component={<Squares />} closeModal={setOpenSquaresModal} />
+            }
+
+            <Card image={faIcons} title="Font Awesome Icons" description="Animated background animation using font-awesome icons" setOpenModal={setOpenFontAwesomeIconsModal} filterItem="buttons" />
+            {
+               openFontAwesomeIconsModal && 
+               <Modal component={<FontAwesomeIcons />} closeModal={setOpenFontAwesomeIconsModal} />
+            }
+
+            <Card image={checkbox} title="Checkbox UI" description="Animated checkbox UI animation" setOpenModal={setOpenCheckboxModal} filterItem="glow" />
+            {
+               openCheckboxModal && 
+               <Modal component={<Checkbox />} closeModal={setOpenCheckboxModal} />
             }
             </div>
       </>

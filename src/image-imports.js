@@ -22,5 +22,7 @@ import calculator from './images/calculator.png';
 import banner from './images/banner.png';
 import menu from './images/menu.png';
 import squares from './images/squares.png';
+import faIcons from './images/fa-icons.png';
+import checkbox from './images/checkbox.png';
 
-export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares };
+export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox };
