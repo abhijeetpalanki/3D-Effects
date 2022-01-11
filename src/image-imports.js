@@ -17,5 +17,7 @@ import buttons from './images/buttons.png';
 import glassCard from './images/glass-card.png';
 import shutter from './images/shutter.png';
 import brothers from './images/brothers.png';
+import parallax from './images/parallax.png';
+import calculator from './images/calculator.png';
 
-export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers };
+export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator };

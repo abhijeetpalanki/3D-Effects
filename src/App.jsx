@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, ImageSlider, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting } from "./component-imports";
+import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator } from "./image-imports";
 
 function App() {  
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -15,7 +15,6 @@ function App() {
   const [openBlobModal, setOpenBlobModal] = useState(false); 
   const [openParticlesModal, setOpenParticlesModal] = useState(false); 
   const [openWaterModal, setOpenWaterModal] = useState(false); 
-  const [openImageSliderModal, setOpenImageSliderModal] = useState(false); 
   const [openRocketModal, setOpenRocketModal] = useState(false); 
   const [openWaveModal, setOpenWaveModal] = useState(false); 
   const [openSmileyModal, setOpenSmileyModal] = useState(false); 
@@ -24,6 +23,8 @@ function App() {
   const [openGlassCardModal, setOpenGlassCardModal] = useState(false); 
   const [openShutterModal, setOpenShutterModal] = useState(false); 
   const [openGreetingModal, setOpenGreetingModal] = useState(false); 
+  const [openParallaxModal, setOpenParallaxModal] = useState(false); 
+  const [openCalculatorModal, setOpenCalculatorModal] = useState(false); 
 
   return (
       <>
@@ -89,12 +90,6 @@ function App() {
                <Modal component={<Water />} closeModal={setOpenWaterModal} />
             }
 
-            <Card image={imageSlider} title="Image Slider" description="Also known as image carousels or slideshows are a convenient way to display multiple images, videos, or graphics" setOpenModal={setOpenImageSliderModal} />
-            {
-               openImageSliderModal && 
-               <Modal component={<ImageSlider />} closeModal={setOpenImageSliderModal} />
-            }
-
             <Card image={rocket} title="Rocket" description="Also known as image carousels or slideshows are a convenient way to display multiple images, videos, or graphics" setOpenModal={setOpenRocketModal} />
             {
                openRocketModal && 
@@ -141,6 +136,18 @@ function App() {
             {
                openGreetingModal && 
                <Modal component={<Greeting />} closeModal={setOpenGreetingModal} />
+            }
+
+            <Card image={parallax} title="Parallax Effect" description="An effect where background images move past the camera more slowly than foreground images, creating an illusion of depth in a 2D scene of distance. (NOT SUPPORTED IN MOBILE BROWSERS)" setOpenModal={setOpenParallaxModal} />
+            {
+               openParallaxModal && 
+               <Modal component={<Parallax />} closeModal={setOpenParallaxModal} />
+            }
+
+            <Card image={calculator} title="Calculator" description="Basic functional calculator with animations" setOpenModal={setOpenCalculatorModal} />
+            {
+               openCalculatorModal && 
+               <Modal component={<Calculator />} closeModal={setOpenCalculatorModal} />
             }
             </div>
       </>

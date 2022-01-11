@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.parallax__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: #111;
+}
+
+.parallax__wrapper section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax__wrapper section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.parallax__wrapper section h2 {
+  position: relative;
+  color: white;
+  font-size: 8em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .parallax__wrapper section h2 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .parallax__wrapper section h2 {
+    font-size: 6em;
+  }
+}

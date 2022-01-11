@@ -234,6 +234,7 @@ body {
   color: white;
   text-align: center;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .card-wrapper:hover {
@@ -262,57 +263,6 @@ body {
   color: grey;
   font-size: 16px;
   font-weight: 300;
-}
-
-.card-wrapper .card-wrapper-stats {
-  padding: 0.5rem;
-  grid-area: stats;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: var(--primary-dark);
-  cursor: pointer;
-}
-
-.card-wrapper .card-wrapper-stats .stat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
-  color: white;
-}
-
-.card-wrapper .card-wrapper-stats .type {
-  font-size: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.card-wrapper .card-wrapper-stats .value {
-  font-size: 11px;
-  font-weight: 300;
-}
-
-.card-wrapper .card__btn {
-  padding: 1rem;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 1rem;
-  border: 2px solid var(--primary-hover);
-  background: transparent;
-  color: var(--primary-hover);
-  border-radius: 0.2rem;
-  transition: transform 200ms ease-in, color 200ms ease-in;
-}
-
-.card-wrapper .card__btn:hover {
-  background: var(--primary-hover);
-  color: white;
-  cursor: pointer;
 }
 
 .popup {
