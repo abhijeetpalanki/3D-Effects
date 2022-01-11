@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import { Card, Modal, Filter, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu } from "./component-imports";
+import { Card, Modal, Filter, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu, Squares } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares } from "./image-imports";
 
-function App() {  
+function App() {        
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
   const [openYearChangerModal, setOpenYearChangerModal] = useState(false); 
   const [openClockModal, setOpenClockModal] = useState(false); 
@@ -27,6 +27,7 @@ function App() {
   const [openCalculatorModal, setOpenCalculatorModal] = useState(false); 
   const [openBannerModal, setOpenBannerModal] = useState(false); 
   const [openMenuModal, setOpenMenuModal] = useState(false); 
+  const [openSquaresModal, setOpenSquaresModal] = useState(false); 
 
   return (
       <>
@@ -163,6 +164,12 @@ function App() {
             {
                openMenuModal && 
                <Modal component={<Menu />} closeModal={setOpenMenuModal} />
+            }
+
+            <Card image={squares} title="Colorful Squares" description="Animated background animation which randomly creates colorful squares" setOpenModal={setOpenSquaresModal} filterItem="abstract" />
+            {
+               openSquaresModal && 
+               <Modal component={<Squares />} closeModal={setOpenSquaresModal} />
             }
             </div>
       </>

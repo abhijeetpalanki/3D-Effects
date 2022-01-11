@@ -241,8 +241,9 @@ body {
 
 .filter__wrapper section ul li {
   list-style: none;
-  background: #eee;
-  color: var(--gray-700);
+  background: #1d1d1d;
+  color: white;
+  border-radius: 18px;
   padding: 12px 20px;
   margin: 5px;
   letter-spacing: 1px;
@@ -252,10 +253,6 @@ body {
 .filter__wrapper section ul li.active {
   background: var(--gradient-color-5);
   color: white;
-}
-
-.cards:hover .card-wrapper {
-  opacity: 0.5;
 }
 
 .card-wrapper {
@@ -278,7 +275,6 @@ body {
 
 .cards .card-wrapper:hover {
   transform: scale(1.05);
-  opacity: 1;
 }
 
 .card-wrapper .card__image {

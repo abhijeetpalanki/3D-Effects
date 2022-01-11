@@ -1,0 +1,35 @@
+.squares__wrapper {
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.squares__wrapper section {
+  height: 100%;
+  width: 100%;
+}
+
+.squares__wrapper section span {
+  position: absolute;
+  pointer-events: none;
+  background: white;
+  animation: animate-squares 5s linear infinite;
+}
+
+@keyframes animate-squares {
+  0% {
+    bottom: -15%;
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(-120%) rotate(360deg);
+    opacity: 0;
+  }
+}
