@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator } from "./component-imports";
+import { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu } from "./image-imports";
 
 function App() {  
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -25,6 +25,8 @@ function App() {
   const [openGreetingModal, setOpenGreetingModal] = useState(false); 
   const [openParallaxModal, setOpenParallaxModal] = useState(false); 
   const [openCalculatorModal, setOpenCalculatorModal] = useState(false); 
+  const [openBannerModal, setOpenBannerModal] = useState(false); 
+  const [openMenuModal, setOpenMenuModal] = useState(false); 
 
   return (
       <>
@@ -148,6 +150,18 @@ function App() {
             {
                openCalculatorModal && 
                <Modal component={<Calculator />} closeModal={setOpenCalculatorModal} />
+            }
+
+            <Card image={banner} title="Starry Night Banner" description="Banner with clouds and stars animation effect" setOpenModal={setOpenBannerModal} />
+            {
+               openBannerModal && 
+               <Modal component={<Banner />} closeModal={setOpenBannerModal} />
+            }
+
+            <Card image={menu} title="Circular Menu" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenMenuModal} />
+            {
+               openMenuModal && 
+               <Modal component={<Menu />} closeModal={setOpenMenuModal} />
             }
             </div>
       </>

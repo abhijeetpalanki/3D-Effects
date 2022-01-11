@@ -21,5 +21,7 @@ import Shutter from './effect-components/Shutter/Shutter';
 import Greeting from './effect-components/Greeting/Greeting';
 import Parallax from './effect-components/Parallax/Parallax';
 import Calculator from './effect-components/Calculator/Calculator';
+import Banner from './effect-components/Banner/Banner';
+import Menu from './effect-components/Menu/Menu';
 
-export { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator };
+export { Card, Modal, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu };

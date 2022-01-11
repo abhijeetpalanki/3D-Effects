@@ -223,6 +223,10 @@ body {
   }
 }
 
+.cards:hover .card-wrapper {
+  opacity: 0.5;
+}
+
 .card-wrapper {
   overflow: hidden;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -237,9 +241,9 @@ body {
   cursor: pointer;
 }
 
-.card-wrapper:hover {
-  transform: scale(1.02);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+.cards .card-wrapper:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 .card-wrapper .card__image {
@@ -276,6 +280,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: transform 200ms ease-in;
+  z-index: 99999;
 }
 
 .popup .popup__inner {
@@ -299,5 +304,5 @@ body {
   cursor: pointer;
   border-radius: 0.2rem;
   transition: transform 200ms ease-in, color 200ms ease-in;
-  z-index: 1000;
+  z-index: 9999999999999;
 }
