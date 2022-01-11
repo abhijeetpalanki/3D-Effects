@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Card = ({image, title, description, setOpenModal}) => {
+const Card = ({image, title, description, setOpenModal, filterItem}) => {
     return (
-        <div className="card-wrapper" onClick={() => {setOpenModal(true);}}>
+        <div data-item={filterItem} className="card-wrapper" onClick={() => {setOpenModal(true);}}>
             <div>
                 <div className="card__image" style={{background: `linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url(${image})`}}></div>
                 <h2 className="card__title">{title}</h2>

@@ -223,6 +223,37 @@ body {
   }
 }
 
+.filter__wrapper section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.filter__wrapper section ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter__wrapper section ul li {
+  list-style: none;
+  background: #eee;
+  color: var(--gray-700);
+  padding: 12px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.filter__wrapper section ul li.active {
+  background: var(--gradient-color-5);
+  color: white;
+}
+
 .cards:hover .card-wrapper {
   opacity: 0.5;
 }
@@ -239,6 +270,10 @@ body {
   text-align: center;
   transition: 0.5s ease;
   cursor: pointer;
+}
+
+.card-wrapper.hide {
+  display: none;
 }
 
 .cards .card-wrapper:hover {
