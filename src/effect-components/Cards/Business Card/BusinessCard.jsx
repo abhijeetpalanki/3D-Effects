@@ -1,9 +1,9 @@
 import React from 'react';
-import './GlassBusinessCard.css';
+import './BusinessCard.css';
 import bg from './bg.jpg';
 import profile from './profile.jpg';
 
-const GlassBusinessCard = () => {
+const BusinessCard = () => {
     return (
         <div className="business-card__body" style={{backgroundImage: `url(${bg})`}}>
             <div className="business-card__card">
@@ -34,4 +34,4 @@ const GlassBusinessCard = () => {
     )
 }
 
-export default GlassBusinessCard
+export default BusinessCard

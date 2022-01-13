@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { Card, Modal, Filter, GlassBusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, Menu, Squares, FontAwesomeIcons, Checkbox } from "./component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox, climb, shapes, tiltCard } from "./image-imports";
 
 function App() {        
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -26,29 +26,32 @@ function App() {
   const [openParallaxModal, setOpenParallaxModal] = useState(false); 
   const [openCalculatorModal, setOpenCalculatorModal] = useState(false); 
   const [openBannerModal, setOpenBannerModal] = useState(false); 
-  const [openMenuModal, setOpenMenuModal] = useState(false); 
+  const [openCircularMenuModal, setOpenCircularMenuModal] = useState(false); 
   const [openSquaresModal, setOpenSquaresModal] = useState(false); 
   const [openFontAwesomeIconsModal, setOpenFontAwesomeIconsModal] = useState(false); 
   const [openCheckboxModal, setOpenCheckboxModal] = useState(false); 
+  const [openClimbModal, setOpenClimbModal] = useState(false); 
+  const [openShapesModal, setOpenShapesModal] = useState(false); 
+  const [openTiltCardModal, setOpenTiltCardModal] = useState(false); 
 
   return (
       <>
          <h1 data-text="Creativity" className="header">Creativity</h1>
          <Filter></Filter>
          <div className="cards"> 
-            <Card image={businessCard} title="Business Card" description="UI design that emphasises light or dark objects, placed on top of colourful backgrounds" setOpenModal={setOpenBusinessCardModal} filterItem="glass" />
+            <Card image={businessCard} title="Business" description="A small card printed with one's name, email address, and contact information." setOpenModal={setOpenBusinessCardModal} filterItem="cards" />
             {
                openBusinessCardModal && 
-               <Modal component={<GlassBusinessCard />} closeModal={setOpenBusinessCardModal} />
+               <Modal component={<BusinessCard />} closeModal={setOpenBusinessCardModal} />
             }
 
-            <Card image={yearChanger} title="Happy New Year" description="Animation gradually changes from 2021 to 2022 on hover" setOpenModal={setOpenYearChangerModal} filterItem="text" />
+            <Card image={yearChanger} title="Happy New Year" description="Animation gradually changes from 2021 to 2022 on hover" setOpenModal={setOpenYearChangerModal} filterItem="buttons" />
             {
                   openYearChangerModal && 
                   <Modal component={<YearChanger />} closeModal={setOpenYearChangerModal} />
             }
 
-            <Card image={clock} title="Neumorphism Clock" description="New visually pleasing cool trend in a design inspired by Skeuomorphism with a more minimal approach Neumorphism (New+Skeuomorphism)"  setOpenModal={setOpenClockModal} filterItem="dark" />
+            <Card image={clock} title="Neumorphism Clock" description="New visually pleasing cool trend in a design inspired by Skeuomorphism with a more minimal approach Neumorphism (New+Skeuomorphism)"  setOpenModal={setOpenClockModal} filterItem="glass" />
             {
                   openClockModal && 
                   <Modal component={<Clock />} closeModal={setOpenClockModal} />
@@ -60,19 +63,19 @@ function App() {
                   <Modal component={<Leaves />} closeModal={setOpenLeavesModal} />
             }
 
-            <Card image={loader} title="Loader" description="Used for notifications that reassure users that the system is still handling their request" setOpenModal={setOpenLoaderModal} filterItem="glow" />
+            <Card image={loader} title="Loader" description="Used for notifications that reassure users that the system is still handling their request" setOpenModal={setOpenLoaderModal} filterItem="abstract" />
             {
                   openLoaderModal && 
                   <Modal component={<Loader />} closeModal={setOpenLoaderModal} />
             }
 
-            <Card image={socialMediaIcons} title="3D Isometric Icons" description="Isometric design for shorthand symbols that link to company's profile on different networks" setOpenModal={setOpenSocialMediaIconsModal} filterItem="buttons" />
+            <Card image={socialMediaIcons} title="3D Isometric Icons" description="Isometric design for shorthand symbols that link to company's profile on different networks" setOpenModal={setOpenSocialMediaIconsModal} filterItem="icons" />
             {
                   openSocialMediaIconsModal && 
                   <Modal component={<SocialMediaIcons />} closeModal={setOpenSocialMediaIconsModal} />
             }
             
-            <Card image={glowingCube} title="Glowing Cube" description="Ambient light 3D glowing cube with text animation effect" setOpenModal={setOpenGlowingCubeModal} filterItem="glow" />
+            <Card image={glowingCube} title="Glowing Cube" description="Ambient light 3D glowing cube with text animation effect" setOpenModal={setOpenGlowingCubeModal} filterItem="abstract" />
             {
                openGlowingCubeModal && 
                <Modal component={<GlowingCube />} closeModal={setOpenGlowingCubeModal} />
@@ -84,13 +87,13 @@ function App() {
                <Modal component={<Blob />} closeModal={setOpenBlobModal} />
             }
 
-            <Card image={particles} title="Glowing Particles" description="Random particles background animation effect" setOpenModal={setOpenParticlesModal} filterItem="glow" />
+            <Card image={particles} title="Glowing Particles" description="Random particles background animation effect" setOpenModal={setOpenParticlesModal} filterItem="nature" />
             {
                openParticlesModal && 
                <Modal component={<Particles />} closeModal={setOpenParticlesModal} />
             }
 
-            <Card image={bubbles} title="Water Bubbles Background" description="Background animation with creative water bubbles" setOpenModal={setOpenWaterModal} filterItem="environment" />
+            <Card image={bubbles} title="Water Bubbles Background" description="Background animation with creative water bubbles" setOpenModal={setOpenWaterModal} filterItem="nature" />
             {
                openWaterModal && 
                <Modal component={<Water />} closeModal={setOpenWaterModal} />
@@ -102,7 +105,7 @@ function App() {
                <Modal component={<Rocket />} closeModal={setOpenRocketModal} />
             }
 
-            <Card image={oxygen} title="Oxygen Wave" description="A water wave with oxygen text hover effect" setOpenModal={setOpenWaveModal} filterItem="environment" />
+            <Card image={oxygen} title="Oxygen Wave" description="A water wave with oxygen text hover effect" setOpenModal={setOpenWaveModal} filterItem="nature" />
             {
                openWaveModal && 
                <Modal component={<Wavy />} closeModal={setOpenWaveModal} />
@@ -114,7 +117,7 @@ function App() {
                <Modal component={<Smiley />} closeModal={setOpenSmileyModal} />
             }
 
-            <Card image={quoteBox} title="Quote Of The Day" description="Creative design with hover animation effect" setOpenModal={setOpenBoxModal} filterItem="text" />
+            <Card image={quoteBox} title="Quote Of The Day" description="Creative design with hover animation effect" setOpenModal={setOpenBoxModal} filterItem="cards" />
             {
                openBoxModal && 
                <Modal component={<Box />} closeModal={setOpenBoxModal} />
@@ -126,7 +129,7 @@ function App() {
                <Modal component={<Button />} closeModal={setOpenButtonModal} />
             }
 
-            <Card image={glassCard} title="Glowing Gradient Card" description="Various hover effects and animations for buttons" setOpenModal={setOpenGlassCardModal} filterItem="glow" />
+            <Card image={glassCard} title="Glowing Gradient Card" description="Various hover effects and animations for buttons" setOpenModal={setOpenGlassCardModal} filterItem="cards" />
             {
                openGlassCardModal && 
                <Modal component={<GlassCard />} closeModal={setOpenGlassCardModal} />
@@ -138,7 +141,7 @@ function App() {
                <Modal component={<Shutter />} closeModal={setOpenShutterModal} />
             }
 
-            <Card image={brothers} title="Greeting Card" description="Greeting - 3D foldable card on hover" setOpenModal={setOpenGreetingModal} filterItem="text" />
+            <Card image={brothers} title="Greeting Card" description="Greeting - 3D foldable card on hover" setOpenModal={setOpenGreetingModal} filterItem="cards" />
             {
                openGreetingModal && 
                <Modal component={<Greeting />} closeModal={setOpenGreetingModal} />
@@ -156,16 +159,16 @@ function App() {
                <Modal component={<Calculator />} closeModal={setOpenCalculatorModal} />
             }
 
-            <Card image={banner} title="Starry Night Banner" description="Banner with clouds and stars animation effect" setOpenModal={setOpenBannerModal} filterItem="environment" />
+            <Card image={banner} title="Starry Night Banner" description="Banner with clouds and stars animation effect" setOpenModal={setOpenBannerModal} filterItem="nature" />
             {
                openBannerModal && 
                <Modal component={<Banner />} closeModal={setOpenBannerModal} />
             }
 
-            <Card image={menu} title="Circular Menu" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenMenuModal} filterItem="glass" />
+            <Card image={menu} title="Circular Menu" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenCircularMenuModal} filterItem="menu" />
             {
-               openMenuModal && 
-               <Modal component={<Menu />} closeModal={setOpenMenuModal} />
+               openCircularMenuModal && 
+               <Modal component={<CircularMenu />} closeModal={setOpenCircularMenuModal} />
             }
 
             <Card image={squares} title="Colorful Squares" description="Animated background animation which randomly creates colorful squares" setOpenModal={setOpenSquaresModal} filterItem="abstract" />
@@ -174,16 +177,34 @@ function App() {
                <Modal component={<Squares />} closeModal={setOpenSquaresModal} />
             }
 
-            <Card image={faIcons} title="Font Awesome Icons" description="Animated background animation using font-awesome icons" setOpenModal={setOpenFontAwesomeIconsModal} filterItem="buttons" />
+            <Card image={faIcons} title="Font Awesome Icons" description="Animated background animation using font-awesome icons" setOpenModal={setOpenFontAwesomeIconsModal} filterItem="icons" />
             {
                openFontAwesomeIconsModal && 
                <Modal component={<FontAwesomeIcons />} closeModal={setOpenFontAwesomeIconsModal} />
             }
 
-            <Card image={checkbox} title="Checkbox UI" description="Animated checkbox UI animation" setOpenModal={setOpenCheckboxModal} filterItem="glow" />
+            <Card image={checkbox} title="Checkbox UI" description="Animated checkbox UI animation" setOpenModal={setOpenCheckboxModal} filterItem="buttons" />
             {
                openCheckboxModal && 
                <Modal component={<Checkbox />} closeModal={setOpenCheckboxModal} />
+            }
+
+            <Card image={climb} title="Climb" description="A box climbing up the hill animation" setOpenModal={setOpenClimbModal} filterItem="abstract" />
+            {
+               openClimbModal && 
+               <Modal component={<Climb />} closeModal={setOpenClimbModal} />
+            }
+
+            <Card image={shapes} title="Shapes" description="A set of square and circlular shaped objects floating around" setOpenModal={setOpenShapesModal} filterItem="abstract" />
+            {
+               openShapesModal && 
+               <Modal component={<Shapes />} closeModal={setOpenShapesModal} />
+            }
+
+            <Card image={tiltCard} title="Mousemove Card" description="3D card with parallax and tilt effect on mousemove" setOpenModal={setOpenTiltCardModal} filterItem="cards" />
+            {
+               openTiltCardModal && 
+               <Modal component={<TiltCard />} closeModal={setOpenTiltCardModal} />
             }
             </div>
       </>

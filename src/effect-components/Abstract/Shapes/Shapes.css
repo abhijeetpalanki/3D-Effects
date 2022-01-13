@@ -1,0 +1,128 @@
+.shapes__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shapes__wrapper .welcome {
+  background-image: linear-gradient(#ff5722, #ffc107);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.shapes__wrapper .welcome h1 {
+  color: white;
+  position: absolute;
+  font-size: 70px;
+  z-index: 1;
+}
+
+.square li {
+  top: 40vh;
+  left: 40vw;
+  overflow: hidden;
+  animation: animate-shape-square 10s linear infinite;
+}
+
+.square ul li {
+  position: absolute;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  list-style: none;
+  opacity: 0;
+  background: white;
+}
+
+.square li:nth-child(2) {
+  top: 70vh;
+  left: 10vw;
+  animation-delay: 2s;
+}
+
+.square li:nth-child(3) {
+  top: 70vh;
+  left: 70vw;
+  animation-delay: 4s;
+}
+
+.square li:nth-child(4) {
+  top: 10vh;
+  left: 60vw;
+  animation-delay: 6s;
+}
+
+.square li:nth-child(5) {
+  top: 10vh;
+  left: 10vw;
+  animation-delay: 8s;
+}
+
+@keyframes animate-shape-square {
+  0% {
+    transform: scale(0) rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(5) rotateY(1000deg);
+    opacity: 0;
+  }
+}
+
+.circle ul li {
+  position: absolute;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  list-style: none;
+  opacity: 0;
+  background: white;
+}
+
+.circle li {
+  bottom: 0;
+  left: 8vw;
+  overflow: hidden;
+  animation: animate-shape-circle 10s linear infinite;
+}
+
+.circle li:nth-child(2) {
+  left: 23vw;
+  animation-delay: 2s;
+}
+
+.circle li:nth-child(3) {
+  left: 38vw;
+  animation-delay: 6s;
+}
+
+.circle li:nth-child(4) {
+  left: 54vw;
+  animation-delay: 4s;
+}
+
+.circle li:nth-child(5) {
+  left: 70vw;
+  animation-delay: 8s;
+}
+
+@keyframes animate-shape-circle {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+    bottom: 0;
+    border-radius: 0;
+  }
+  100% {
+    transform: scale(5) rotate(1000deg);
+    opacity: 0;
+    bottom: 65vh;
+    border-radius: 50%;
+  }
+}

@@ -6,10 +6,10 @@ const Button = () => {
         <div className="button__wrapper">
             <div className="container">
                 <div className="btn1">
-                    <a href="#"><span>Button</span></a>
+                    <a href="!#"><span>Button</span></a>
                 </div>
                 <div className="btn2">                    
-                    <a href="#">
+                    <a href="!#">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -18,10 +18,10 @@ const Button = () => {
                     </a>
                 </div>
                 <div className="btn3">
-                    <a href="#" className="dynamic-link"><span>Button</span></a>
+                    <a href="!#" className="dynamic-link"><span>Button</span></a>
                 </div>
                 <div className="btn4">
-                    <a href="#">
+                    <a href="!#">
                         <span>Button</span>
                         <span>Button</span>
                     </a>

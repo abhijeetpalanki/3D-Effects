@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
 import Tilt from 'react-tilt';
 
@@ -9,8 +9,8 @@ const Calculator = () => {
     const ops = ['/', '*', '+', '-', '.'];
 
     const updateCalc = (value) => {
-        if (ops.includes(value) && calc === '' || 
-            ops.includes(value) && ops.includes(calc.slice(-1))) {
+        if ((ops.includes(value) && calc === '') || 
+            (ops.includes(value) && ops.includes(calc.slice(-1)))) {
             return;
         }
         setCalc(calc + value);
