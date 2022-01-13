@@ -3,8 +3,13 @@ import './Clock.css';
 
 const Clock = () => {
     const [date, setDate] = useState(new Date());
+    const [toggleMode, setToggleMode] = useState(false)
     
-    useEffect(() => {
+    const handleToggleMode = () => {
+        setToggleMode(!toggleMode);
+    }
+
+    useEffect(() => {     
         let timeId = 0;
         timeId = setInterval(() => {
             setDate(new Date());
@@ -16,19 +21,22 @@ const Clock = () => {
     }, []);
     
     return (
-        <div className="clock__body">
-            <div className="clock">
-                <div className="hour">
-                    <div className="hr" id="hr" style={{transform: `rotateZ(${date.getHours() * 30}deg)`}}></div>
+        <>
+            <div className={toggleMode ? "clock__body light": "clock__body"}>
+                <div className="clock">
+                    <div className="hour">
+                        <div className="hr" id="hr" style={{transform: `rotateZ(${date.getHours() * 30}deg)`}}></div>
+                    </div>
+                    <div className="min">
+                        <div className="mn" id="mn" style={{transform: `rotateZ(${date.getMinutes() * 6}deg)`}}></div>
+                    </div>
+                    <div className="sec">
+                        <div className="sc" id="sc" style={{transform: `rotateZ(${date.getSeconds() * 6}deg)`}}></div>
+                    </div>
                 </div>
-                <div className="min">
-                    <div className="mn" id="mn" style={{transform: `rotateZ(${date.getMinutes() * 6}deg)`}}></div>
-                </div>
-                <div className="sec">
-                    <div className="sc" id="sc" style={{transform: `rotateZ(${date.getSeconds() * 6}deg)`}}></div>
-                </div>
+                <div className="toggleClass" onClick={handleToggleMode}></div>
             </div>
-        </div>
+        </>
     )
 }
 
