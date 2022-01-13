@@ -82,7 +82,7 @@
 }
 
 .greeting__wrapper .greeting-card .details .content h2 span {
-  color: var(--gradient-color-5);
+  color: #0072ff;
   font-size: 0.8em;
 }
 

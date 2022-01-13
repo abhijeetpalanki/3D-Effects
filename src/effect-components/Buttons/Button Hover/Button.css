@@ -310,7 +310,7 @@
   left: 0;
   width: 4px;
   height: 100%;
-  background: var(--gradient-color-5);
+  background: #0072ff;
   transition: 0.5s ease-in-out;
   transition-delay: 0.5s;
 }
@@ -322,7 +322,7 @@
   right: 0;
   width: 4px;
   height: 100%;
-  background: var(--gradient-color-5);
+  background: #0072ff;
   transition: 0.5s ease-in-out;
   transition-delay: 0.5s;
 }

@@ -1,5 +1,5 @@
 .loader__wrapper {
-  background: var(--loader-background);
+  background: #2196f3;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@
   width: 50px;
   height: 300px;
   margin: 0 20px;
-  background: var(--loader-background);
+  background: #2196f3;
   animation: loading 1.4s linear infinite;
 }
 

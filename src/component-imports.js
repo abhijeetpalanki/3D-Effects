@@ -1,6 +1,6 @@
-import Card from "./utils/Card";
-import Modal from "./utils/Modal";
-import Filter from './utils/Filter';
+import Card from "./utils/Card/Card";
+import Modal from "./utils/Modal/Modal";
+import Filter from './utils/Filter/Filter';
 
 import Leaves from "./effect-components/Abstract/Falling Leaves/Leaves";
 import Loader from "./effect-components/Abstract/Loader/Loader";

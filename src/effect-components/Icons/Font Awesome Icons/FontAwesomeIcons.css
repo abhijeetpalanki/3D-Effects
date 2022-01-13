@@ -91,6 +91,6 @@
 }
 
 .fa-icons__wrapper section i:hover {
-  color: var(--gradient-color-6);
-  text-shadow: 0 0 120px var(--gradient-color-6);
+  color: #ff0058;
+  text-shadow: 0 0 120px #ff0058;
 }
