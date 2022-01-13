@@ -28,5 +28,6 @@ import climb from './images/climb.png';
 import shapes from './images/shapes.png';
 import tiltCard from './images/tilt-card.png';
 import skillsBar from './images/skills-bar.png';
+import dropdownMenu from './images/dropdown-menu.png';
 
-export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox, climb, shapes, tiltCard, skillsBar };
+export { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, imageSlider, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox, climb, shapes, tiltCard, skillsBar, dropdownMenu };

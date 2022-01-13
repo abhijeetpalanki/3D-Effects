@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar } from "./component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox, climb, shapes, tiltCard, skillsBar } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox, climb, shapes, tiltCard, skillsBar, dropdownMenu } from "./image-imports";
 
 function App() {        
   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -34,6 +34,7 @@ function App() {
   const [openShapesModal, setOpenShapesModal] = useState(false); 
   const [openTiltCardModal, setOpenTiltCardModal] = useState(false); 
   const [openSkillsBarModal, setOpenSkillsBarModal] = useState(false); 
+  const [openDropdownMenuModal, setOpenDropdownMenuModal] = useState(false); 
 
   return (
       <>
@@ -208,10 +209,16 @@ function App() {
                <Modal component={<TiltCard />} closeModal={setOpenTiltCardModal} />
             }
 
-            <Card image={skillsBar} title="5 Star Skills Rating Bar" description="A scale used to display skills in one's technology stack." setOpenModal={setOpenSkillsBarModal} filterItem="buttons" />
+            <Card image={skillsBar} title="5 Star Skills Rating Bar" description="A scale used to display skills in one's technology stack" setOpenModal={setOpenSkillsBarModal} filterItem="buttons" />
             {
                openSkillsBarModal && 
                <Modal component={<SkillsBar />} closeModal={setOpenSkillsBarModal} />
+            }
+
+            <Card image={dropdownMenu} title="Dropdown Menu" description="A list of choices when an user clicks on the menu's title" setOpenModal={setOpenDropdownMenuModal} filterItem="menu" />
+            {
+               openDropdownMenuModal && 
+               <Modal component={<DropdownMenu />} closeModal={setOpenDropdownMenuModal} />
             }
             </div>
       </>

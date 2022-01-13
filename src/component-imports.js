@@ -37,5 +37,6 @@ import Particles from "./effect-components/Nature/Particles/Particles";
 import Water from './effect-components/Nature/Water Background/Water';
 import Wavy from './effect-components/Nature/Wavy Section/Wavy';
 import Banner from './effect-components/Nature/Banner/Banner';
+import DropdownMenu from './effect-components/Menu/Dropdown Menu/DropdownMenu';
 
-export { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar };
+export { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu };
