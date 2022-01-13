@@ -2,8 +2,6 @@ import { useState } from "react";
 
 import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox, climb, shapes, tiltCard, skillsBar, dropdownMenu, magicMenu } from "./image-imports";
-
 function App() {   
    const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
    const [openYearChangerModal, setOpenYearChangerModal] = useState(false); 
@@ -42,187 +40,187 @@ function App() {
          <h1 data-text="Creativity" className="header">Creativity</h1>
          <Filter></Filter>
          <div className="cards"> 
-            <Card image={businessCard} title="Business" description="A small card printed with one's name, email address, and contact information." setOpenModal={setOpenBusinessCardModal} filterItem="cards" />
+            <Card title="Business" description="A small card printed with one's name, email address, and contact information." setOpenModal={setOpenBusinessCardModal} filterItem="cards" serialNo={1} />
             {
                openBusinessCardModal && 
                <Modal component={<BusinessCard />} closeModal={setOpenBusinessCardModal} />
             }
 
-            <Card image={yearChanger} title="Happy New Year" description="Animation gradually changes from 2021 to 2022 on hover" setOpenModal={setOpenYearChangerModal} filterItem="buttons" />
+            <Card title="Happy New Year" description="Animation gradually changes from 2021 to 2022 on hover" setOpenModal={setOpenYearChangerModal} filterItem="buttons" serialNo={2} />
             {
                   openYearChangerModal && 
                   <Modal component={<YearChanger />} closeModal={setOpenYearChangerModal} />
             }
 
-            <Card image={clock} title="Neumorphism Clock" description="New visually pleasing cool trend in a design inspired by Skeuomorphism with a more minimal approach Neumorphism (New+Skeuomorphism)"  setOpenModal={setOpenClockModal} filterItem="glass" />
+            <Card title="Neumorphism Clock" description="New visually pleasing cool trend in a design inspired by Skeuomorphism with a more minimal approach Neumorphism (New+Skeuomorphism)"  setOpenModal={setOpenClockModal} filterItem="glass" serialNo={3} />
             {
                   openClockModal && 
                   <Modal component={<Clock />} closeModal={setOpenClockModal} />
             }
 
-            <Card image={leaves} title="Falling Leaves" description="Emulate autumn leaves falling only using css animations" setOpenModal={setOpenLeavesModal} filterItem="abstract" />
+            <Card title="Falling Leaves" description="Emulate autumn leaves falling only using css animations" setOpenModal={setOpenLeavesModal} filterItem="abstract" serialNo={4} />
             {
                   openLeavesModal && 
                   <Modal component={<Leaves />} closeModal={setOpenLeavesModal} />
             }
 
-            <Card image={loader} title="Loader" description="Used for notifications that reassure users that the system is still handling their request" setOpenModal={setOpenLoaderModal} filterItem="abstract" />
+            <Card title="Loader" description="Used for notifications that reassure users that the system is still handling their request" setOpenModal={setOpenLoaderModal} filterItem="abstract" serialNo={5} />
             {
                   openLoaderModal && 
                   <Modal component={<Loader />} closeModal={setOpenLoaderModal} />
             }
 
-            <Card image={socialMediaIcons} title="3D Isometric Icons" description="Isometric design for shorthand symbols that link to company's profile on different networks" setOpenModal={setOpenSocialMediaIconsModal} filterItem="icons" />
+            <Card title="3D Isometric Icons" description="Isometric design for shorthand symbols that link to company's profile on different networks" setOpenModal={setOpenSocialMediaIconsModal} filterItem="icons" serialNo={6} />
             {
                   openSocialMediaIconsModal && 
                   <Modal component={<SocialMediaIcons />} closeModal={setOpenSocialMediaIconsModal} />
             }
             
-            <Card image={glowingCube} title="Glowing Cube" description="Ambient light 3D glowing cube with text animation effect" setOpenModal={setOpenGlowingCubeModal} filterItem="abstract" />
+            <Card title="Glowing Cube" description="Ambient light 3D glowing cube with text animation effect" setOpenModal={setOpenGlowingCubeModal} filterItem="abstract" serialNo={7} />
             {
                openGlowingCubeModal && 
                <Modal component={<GlowingCube />} closeModal={setOpenGlowingCubeModal} />
             }
 
-            <Card image={blob} title="Smooth Animated Blob" description="Blob animation effect using SVG" setOpenModal={setOpenBlobModal} filterItem="abstract" />
+            <Card title="Smooth Animated Blob" description="Blob animation effect using SVG" setOpenModal={setOpenBlobModal} filterItem="abstract" serialNo={8} />
             {
                openBlobModal && 
                <Modal component={<Blob />} closeModal={setOpenBlobModal} />
             }
 
-            <Card image={particles} title="Glowing Particles" description="Random particles background animation effect" setOpenModal={setOpenParticlesModal} filterItem="nature" />
+            <Card title="Glowing Particles" description="Random particles background animation effect" setOpenModal={setOpenParticlesModal} filterItem="nature" serialNo={9} />
             {
                openParticlesModal && 
                <Modal component={<Particles />} closeModal={setOpenParticlesModal} />
             }
 
-            <Card image={bubbles} title="Water Bubbles Background" description="Background animation with creative water bubbles" setOpenModal={setOpenWaterModal} filterItem="nature" />
+            <Card title="Water Bubbles Background" description="Background animation with creative water bubbles" setOpenModal={setOpenWaterModal} filterItem="nature" serialNo={10} />
             {
                openWaterModal && 
                <Modal component={<Water />} closeModal={setOpenWaterModal} />
             }
 
-            <Card image={rocket} title="Rocket" description="Also known as image carousels or slideshows are a convenient way to display multiple images, videos, or graphics" setOpenModal={setOpenRocketModal} filterItem="abstract" />
+            <Card title="Rocket" description="Also known as image carousels or slideshows are a convenient way to display multiple images, videos, or graphics" setOpenModal={setOpenRocketModal} filterItem="abstract" serialNo={11} />
             {
                openRocketModal && 
                <Modal component={<Rocket />} closeModal={setOpenRocketModal} />
             }
 
-            <Card image={oxygen} title="Oxygen Wave" description="A water wave with oxygen text hover effect" setOpenModal={setOpenWaveModal} filterItem="nature" />
+            <Card title="Oxygen Wave" description="A water wave with oxygen text hover effect" setOpenModal={setOpenWaveModal} filterItem="nature" serialNo={12} />
             {
                openWaveModal && 
                <Modal component={<Wavy />} closeModal={setOpenWaveModal} />
             }
 
-            <Card image={smileyRatingBar} title="Smiley Rating Bar" description="A simple rating bar which displays animated smileys as rating icon" setOpenModal={setOpenSmileyModal} filterItem="buttons" />
+            <Card title="Smiley Rating Bar" description="A simple rating bar which displays animated smileys as rating icon" setOpenModal={setOpenSmileyModal} filterItem="buttons" serialNo={13} />
             {
                openSmileyModal && 
                <Modal component={<Smiley />} closeModal={setOpenSmileyModal} />
             }
 
-            <Card image={quoteBox} title="Quote Of The Day" description="Creative design with hover animation effect" setOpenModal={setOpenBoxModal} filterItem="cards" />
+            <Card title="Quote Of The Day" description="Creative design with hover animation effect" setOpenModal={setOpenBoxModal} filterItem="cards" serialNo={14} />
             {
                openBoxModal && 
                <Modal component={<Box />} closeModal={setOpenBoxModal} />
             }
 
-            <Card image={buttons} title="Button Hover Effects" description="Various hover effects and animations for buttons" setOpenModal={setOpenButtonModal} filterItem="buttons" />
+            <Card title="Button Hover Effects" description="Various hover effects and animations for buttons" setOpenModal={setOpenButtonModal} filterItem="buttons" serialNo={15} />
             {
                openButtonModal && 
                <Modal component={<Button />} closeModal={setOpenButtonModal} />
             }
 
-            <Card image={glassCard} title="Glowing Gradient Card" description="Various hover effects and animations for buttons" setOpenModal={setOpenGlassCardModal} filterItem="cards" />
+            <Card title="Glowing Gradient Card" description="Various hover effects and animations for buttons" setOpenModal={setOpenGlassCardModal} filterItem="cards" serialNo={16} />
             {
                openGlassCardModal && 
                <Modal component={<GlassCard />} closeModal={setOpenGlassCardModal} />
             }
 
-            <Card image={shutter} title="Glass Shutter" description="Shutter effect based on progress bar" setOpenModal={setOpenShutterModal} filterItem="glass" />
+            <Card title="Glass Shutter" description="Shutter effect based on progress bar" setOpenModal={setOpenShutterModal} filterItem="glass" serialNo={17} />
             {
                openShutterModal && 
                <Modal component={<Shutter />} closeModal={setOpenShutterModal} />
             }
 
-            <Card image={brothers} title="Greeting Card" description="Greeting - 3D foldable card on hover" setOpenModal={setOpenGreetingModal} filterItem="cards" />
+            <Card title="Greeting Card" description="Greeting - 3D foldable card on hover" setOpenModal={setOpenGreetingModal} filterItem="cards" serialNo={18} />
             {
                openGreetingModal && 
                <Modal component={<Greeting />} closeModal={setOpenGreetingModal} />
             }
 
-            <Card image={parallax} title="Parallax Effect" description="An effect where background images move past the camera more slowly than foreground images, creating an illusion of depth in a 2D scene of distance. (NOT SUPPORTED IN MOBILE BROWSERS)" setOpenModal={setOpenParallaxModal} filterItem="abstract" />
+            <Card title="Parallax Effect" description="An effect where background images move past the camera more slowly than foreground images, creating an illusion of depth in a 2D scene of distance. (NOT SUPPORTED IN MOBILE BROWSERS)" setOpenModal={setOpenParallaxModal} filterItem="abstract" serialNo={19} />
             {
                openParallaxModal && 
                <Modal component={<Parallax />} closeModal={setOpenParallaxModal} />
             }
 
-            <Card image={calculator} title="Calculator" description="Basic functional calculator with animations" setOpenModal={setOpenCalculatorModal} filterItem="glass" />
+            <Card title="Calculator" description="Basic functional calculator with animations" setOpenModal={setOpenCalculatorModal} filterItem="glass" serialNo={20} />
             {
                openCalculatorModal && 
                <Modal component={<Calculator />} closeModal={setOpenCalculatorModal} />
             }
 
-            <Card image={banner} title="Starry Night Banner" description="Banner with clouds and stars animation effect" setOpenModal={setOpenBannerModal} filterItem="nature" />
+            <Card title="Starry Night Banner" description="Banner with clouds and stars animation effect" setOpenModal={setOpenBannerModal} filterItem="nature" serialNo={21} />
             {
                openBannerModal && 
                <Modal component={<Banner />} closeModal={setOpenBannerModal} />
             }
 
-            <Card image={menu} title="Circular Menu" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenCircularMenuModal} filterItem="menu" />
+            <Card title="Circular Menu" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenCircularMenuModal} filterItem="menu" serialNo={22} />
             {
                openCircularMenuModal && 
                <Modal component={<CircularMenu />} closeModal={setOpenCircularMenuModal} />
             }
 
-            <Card image={squares} title="Colorful Squares" description="Animated background animation which randomly creates colorful squares" setOpenModal={setOpenSquaresModal} filterItem="abstract" />
+            <Card title="Colorful Squares" description="Animated background animation which randomly creates colorful squares" setOpenModal={setOpenSquaresModal} filterItem="abstract" serialNo={23} />
             {
                openSquaresModal && 
                <Modal component={<Squares />} closeModal={setOpenSquaresModal} />
             }
 
-            <Card image={faIcons} title="Font Awesome Icons" description="Animated background animation using font-awesome icons" setOpenModal={setOpenFontAwesomeIconsModal} filterItem="icons" />
+            <Card title="Font Awesome Icons" description="Animated background animation using font-awesome icons" setOpenModal={setOpenFontAwesomeIconsModal} filterItem="icons" serialNo={24} />
             {
                openFontAwesomeIconsModal && 
                <Modal component={<FontAwesomeIcons />} closeModal={setOpenFontAwesomeIconsModal} />
             }
 
-            <Card image={checkbox} title="Checkbox UI" description="Animated checkbox UI animation" setOpenModal={setOpenCheckboxModal} filterItem="buttons" />
+            <Card title="Checkbox UI" description="Animated checkbox UI animation" setOpenModal={setOpenCheckboxModal} filterItem="buttons" serialNo={25} />
             {
                openCheckboxModal && 
                <Modal component={<Checkbox />} closeModal={setOpenCheckboxModal} />
             }
 
-            <Card image={climb} title="Climb" description="A box climbing up the hill animation" setOpenModal={setOpenClimbModal} filterItem="abstract" />
+            <Card title="Climb" description="A box climbing up the hill animation" setOpenModal={setOpenClimbModal} filterItem="abstract" serialNo={26} />
             {
                openClimbModal && 
                <Modal component={<Climb />} closeModal={setOpenClimbModal} />
             }
 
-            <Card image={shapes} title="Shapes" description="A set of square and circlular shaped objects floating around" setOpenModal={setOpenShapesModal} filterItem="abstract" />
+            <Card title="Shapes" description="A set of square and circlular shaped objects floating around" setOpenModal={setOpenShapesModal} filterItem="abstract" serialNo={27} />
             {
                openShapesModal && 
                <Modal component={<Shapes />} closeModal={setOpenShapesModal} />
             }
 
-            <Card image={tiltCard} title="Mousemove Card" description="3D card with parallax and tilt effect on mousemove" setOpenModal={setOpenTiltCardModal} filterItem="cards" />
+            <Card title="Mousemove Card" description="3D card with parallax and tilt effect on mousemove" setOpenModal={setOpenTiltCardModal} filterItem="cards" serialNo={28} />
             {
                openTiltCardModal && 
                <Modal component={<TiltCard />} closeModal={setOpenTiltCardModal} />
             }
 
-            <Card image={skillsBar} title="5 Star Skills Rating Bar" description="A scale used to display skills in one's technology stack" setOpenModal={setOpenSkillsBarModal} filterItem="buttons" />
+            <Card title="5 Star Skills Rating Bar" description="A scale used to display skills in one's technology stack" setOpenModal={setOpenSkillsBarModal} filterItem="buttons" serialNo={29} />
             {
                openSkillsBarModal && 
                <Modal component={<SkillsBar />} closeModal={setOpenSkillsBarModal} />
             }
 
-            <Card image={dropdownMenu} title="Dropdown Menu" description="A list of choices when an user clicks on the menu's title" setOpenModal={setOpenDropdownMenuModal} filterItem="menu" />
+            <Card title="Dropdown Menu" description="A list of choices when an user clicks on the menu's title" setOpenModal={setOpenDropdownMenuModal} filterItem="menu" serialNo={30} />
             {
                openDropdownMenuModal && 
                <Modal component={<DropdownMenu />} closeModal={setOpenDropdownMenuModal} />
             }
 
-            <Card image={magicMenu} title="Magic Menu Indicator" description="Animated list of options presented to an user that will reveal current page on the website" setOpenModal={setOpenMagicMenuModal} filterItem="menu" />
+            <Card title="Magic Menu Indicator" description="Animated list of options presented to an user that will reveal current page on the website" setOpenModal={setOpenMagicMenuModal} filterItem="menu" serialNo={31} />
             {
                openMagicMenuModal && 
                <Modal component={<MagicMenu />} closeModal={setOpenMagicMenuModal} />
