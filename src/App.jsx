@@ -1,40 +1,41 @@
 import { useState } from "react";
 
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu } from "./component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu } from "./component-imports";
 
-import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox, climb, shapes, tiltCard, skillsBar, dropdownMenu } from "./image-imports";
+import { businessCard, yearChanger, clock, leaves, loader, socialMediaIcons, glowingCube, blob, particles, bubbles, rocket, oxygen, smileyRatingBar, quoteBox, buttons, glassCard, shutter, brothers, parallax, calculator, banner, menu, squares, faIcons, checkbox, climb, shapes, tiltCard, skillsBar, dropdownMenu, magicMenu } from "./image-imports";
 
-function App() {        
-  const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
-  const [openYearChangerModal, setOpenYearChangerModal] = useState(false); 
-  const [openClockModal, setOpenClockModal] = useState(false); 
-  const [openLeavesModal, setOpenLeavesModal] = useState(false); 
-  const [openLoaderModal, setOpenLoaderModal] = useState(false); 
-  const [openSocialMediaIconsModal, setOpenSocialMediaIconsModal] = useState(false); 
-  const [openGlowingCubeModal, setOpenGlowingCubeModal] = useState(false); 
-  const [openBlobModal, setOpenBlobModal] = useState(false); 
-  const [openParticlesModal, setOpenParticlesModal] = useState(false); 
-  const [openWaterModal, setOpenWaterModal] = useState(false); 
-  const [openRocketModal, setOpenRocketModal] = useState(false); 
-  const [openWaveModal, setOpenWaveModal] = useState(false); 
-  const [openSmileyModal, setOpenSmileyModal] = useState(false); 
-  const [openBoxModal, setOpenBoxModal] = useState(false); 
-  const [openButtonModal, setOpenButtonModal] = useState(false); 
-  const [openGlassCardModal, setOpenGlassCardModal] = useState(false); 
-  const [openShutterModal, setOpenShutterModal] = useState(false); 
-  const [openGreetingModal, setOpenGreetingModal] = useState(false); 
-  const [openParallaxModal, setOpenParallaxModal] = useState(false); 
-  const [openCalculatorModal, setOpenCalculatorModal] = useState(false); 
-  const [openBannerModal, setOpenBannerModal] = useState(false); 
-  const [openCircularMenuModal, setOpenCircularMenuModal] = useState(false); 
-  const [openSquaresModal, setOpenSquaresModal] = useState(false); 
-  const [openFontAwesomeIconsModal, setOpenFontAwesomeIconsModal] = useState(false); 
-  const [openCheckboxModal, setOpenCheckboxModal] = useState(false); 
-  const [openClimbModal, setOpenClimbModal] = useState(false); 
-  const [openShapesModal, setOpenShapesModal] = useState(false); 
-  const [openTiltCardModal, setOpenTiltCardModal] = useState(false); 
-  const [openSkillsBarModal, setOpenSkillsBarModal] = useState(false); 
-  const [openDropdownMenuModal, setOpenDropdownMenuModal] = useState(false); 
+function App() {   
+   const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
+   const [openYearChangerModal, setOpenYearChangerModal] = useState(false); 
+   const [openClockModal, setOpenClockModal] = useState(false); 
+   const [openLeavesModal, setOpenLeavesModal] = useState(false); 
+   const [openLoaderModal, setOpenLoaderModal] = useState(false); 
+   const [openSocialMediaIconsModal, setOpenSocialMediaIconsModal] = useState(false); 
+   const [openGlowingCubeModal, setOpenGlowingCubeModal] = useState(false); 
+   const [openBlobModal, setOpenBlobModal] = useState(false); 
+   const [openParticlesModal, setOpenParticlesModal] = useState(false); 
+   const [openWaterModal, setOpenWaterModal] = useState(false); 
+   const [openRocketModal, setOpenRocketModal] = useState(false); 
+   const [openWaveModal, setOpenWaveModal] = useState(false); 
+   const [openSmileyModal, setOpenSmileyModal] = useState(false); 
+   const [openBoxModal, setOpenBoxModal] = useState(false); 
+   const [openButtonModal, setOpenButtonModal] = useState(false); 
+   const [openGlassCardModal, setOpenGlassCardModal] = useState(false); 
+   const [openShutterModal, setOpenShutterModal] = useState(false); 
+   const [openGreetingModal, setOpenGreetingModal] = useState(false); 
+   const [openParallaxModal, setOpenParallaxModal] = useState(false); 
+   const [openCalculatorModal, setOpenCalculatorModal] = useState(false); 
+   const [openBannerModal, setOpenBannerModal] = useState(false); 
+   const [openCircularMenuModal, setOpenCircularMenuModal] = useState(false); 
+   const [openSquaresModal, setOpenSquaresModal] = useState(false); 
+   const [openFontAwesomeIconsModal, setOpenFontAwesomeIconsModal] = useState(false); 
+   const [openCheckboxModal, setOpenCheckboxModal] = useState(false); 
+   const [openClimbModal, setOpenClimbModal] = useState(false); 
+   const [openShapesModal, setOpenShapesModal] = useState(false); 
+   const [openTiltCardModal, setOpenTiltCardModal] = useState(false); 
+   const [openSkillsBarModal, setOpenSkillsBarModal] = useState(false); 
+   const [openDropdownMenuModal, setOpenDropdownMenuModal] = useState(false); 
+   const [openMagicMenuModal, setOpenMagicMenuModal] = useState(false); 
 
   return (
       <>
@@ -219,6 +220,12 @@ function App() {
             {
                openDropdownMenuModal && 
                <Modal component={<DropdownMenu />} closeModal={setOpenDropdownMenuModal} />
+            }
+
+            <Card image={magicMenu} title="Magic Menu Indicator" description="Animated list of options presented to an user that will reveal current page on the website" setOpenModal={setOpenMagicMenuModal} filterItem="menu" />
+            {
+               openMagicMenuModal && 
+               <Modal component={<MagicMenu />} closeModal={setOpenMagicMenuModal} />
             }
             </div>
       </>

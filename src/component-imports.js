@@ -31,12 +31,13 @@ import Clock from "./effect-components/Glass/Clock/Clock";
 import Shutter from './effect-components/Glass/Shutter/Shutter';
 import Calculator from './effect-components/Glass/Calculator/Calculator';
 
-import CircularMenu from './effect-components/Menu/CircularMenu/CircularMenu';
+import CircularMenu from './effect-components/Menu/Circular Menu/CircularMenu';
 
 import Particles from "./effect-components/Nature/Particles/Particles";
 import Water from './effect-components/Nature/Water Background/Water';
 import Wavy from './effect-components/Nature/Wavy Section/Wavy';
 import Banner from './effect-components/Nature/Banner/Banner';
 import DropdownMenu from './effect-components/Menu/Dropdown Menu/DropdownMenu';
+import MagicMenu from './effect-components/Menu/Magic Menu Indicator/MagicMenu';
 
-export { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu };
+export { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu };
