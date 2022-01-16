@@ -11,6 +11,7 @@ import Parallax from './effect-components/Abstract/Parallax/Parallax';
 import Squares from './effect-components/Abstract/Colorful Squares/Squares';
 import Climb from './effect-components/Abstract/Climb/Climb';
 import Shapes from './effect-components/Abstract/Shapes/Shapes';
+import Rain from './effect-components/Abstract/Colorful Rain/Rain';
 
 import YearChanger from "./effect-components/Buttons/Year Changer/YearChanger";
 import Smiley from './effect-components/Buttons/Smiley Bar/Smiley';
@@ -40,4 +41,4 @@ import Water from './effect-components/Nature/Water Background/Water';
 import Wavy from './effect-components/Nature/Wavy Section/Wavy';
 import Banner from './effect-components/Nature/Banner/Banner';
 
-export { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu };
+export { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain };

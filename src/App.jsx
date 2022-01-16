@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu } from "./component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain } from "./component-imports";
 
 function App() {   
    const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -34,6 +34,7 @@ function App() {
    const [openSkillsBarModal, setOpenSkillsBarModal] = useState(false); 
    const [openDropdownMenuModal, setOpenDropdownMenuModal] = useState(false); 
    const [openMagicMenuModal, setOpenMagicMenuModal] = useState(false); 
+   const [openRainModal, setOpenRainModal] = useState(false); 
 
   return (
       <>
@@ -224,6 +225,12 @@ function App() {
             {
                openMagicMenuModal && 
                <Modal component={<MagicMenu />} closeModal={setOpenMagicMenuModal} />
+            }
+
+            <Card title="Colorful Rain" description="Animated rain with randomized color" setOpenModal={setOpenRainModal} filterItem="abstract" serialNo={32} />
+            {
+               openRainModal && 
+               <Modal component={<Rain />} closeModal={setOpenRainModal} />
             }
             </div>
       </>

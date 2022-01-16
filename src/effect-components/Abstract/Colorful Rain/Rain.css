@@ -1,0 +1,35 @@
+.rain__wrapper {
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+.rain__wrapper i {
+  position: absolute;
+  height: 200px;
+  background: linear-gradient(transparent, white);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: animate-rain 5s linear infinite;
+}
+
+.rain__wrapper i:nth-child(3n + 1) {
+  background: linear-gradient(transparent, #0ff);
+}
+
+.rain__wrapper i:nth-child(3n + 2) {
+  background: linear-gradient(transparent, #0f0);
+}
+
+.rain__wrapper i:nth-child(3n + 3) {
+  background: linear-gradient(transparent, #f00);
+}
+
+@keyframes animate-rain {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(calc(100% + 800px));
+  }
+}
