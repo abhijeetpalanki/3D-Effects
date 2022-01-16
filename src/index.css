@@ -3,15 +3,29 @@
 *,
 *::after,
 *::before {
+  /* Light */
+  --light-background-color: #eee;
+
+  /* Dark */
+  --dark-background-color: #161d34;
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
+.body-dark {
   font-family: roboto, sans-serif;
-  background: #161d34;
   overflow-x: hidden;
+  background: var(--dark-background-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.body-light {
+  font-family: roboto, sans-serif;
+  overflow-x: hidden;
+  background: var(--light-background-color);
   width: 100vw;
   height: 100vh;
 }
@@ -37,11 +51,11 @@ body {
   padding: 2rem;
 }
 
-.header {
+.header-dark {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #161d34;
+  color: var(--dark-background-color);
   padding-top: 20px;
   font-weight: 900;
   font-size: 4em;
@@ -51,7 +65,35 @@ body {
   text-transform: uppercase;
 }
 
-.header::before {
+.header-light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-background-color);
+  padding-top: 20px;
+  font-weight: 900;
+  font-size: 4em;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: 0.1vw #383d52;
+  text-transform: uppercase;
+}
+
+.header-dark::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: attr(data-text);
+  width: 0;
+  height: 10%;
+  color: #039d69;
+  -webkit-text-stroke: 0vw #383d52;
+  overflow: hidden;
+  animation: animate-header 6s linear infinite;
+}
+
+.header-light::before {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,41 +192,90 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-  .header::before {
+  .header-dark::before,
+  .header-light::before {
     animation: animate-header-1400 6s linear infinite;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .header::before {
+  .header-dark::before,
+  .header-light::before {
     animation: animate-header-1000 6s linear infinite;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .header::before {
+  .header-dark::before,
+  .header-light::before {
     animation: animate-header-750 6s linear infinite;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .header::before {
+  .header-dark::before,
+  .header-light::before {
     animation: animate-header-650 6s linear infinite;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .header::before {
+  .header-dark::before,
+  .header-light::before {
     animation: animate-header-550 6s linear infinite;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .header {
+  .header-dark,
+  .header-light {
     font-size: 3em;
   }
 
-  .header::before {
+  .header-dark::before,
+  .header-light::before {
     animation: animate-header-450 6s linear infinite;
   }
+}
+
+.toggle-light {
+  position: absolute;
+  background: var(--dark-background-color);
+  top: 20px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-light::before {
+  content: "\f186";
+  font-family: fontAwesome;
+  color: white;
+  font-size: 2em;
+}
+
+.toggle-dark {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  background: var(--light-background-color);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-dark::before {
+  content: "\f186";
+  font-family: fontAwesome;
+  color: black;
+  font-size: 2em;
 }

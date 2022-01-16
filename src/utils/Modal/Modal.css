@@ -35,24 +35,3 @@
   transition: transform 200ms ease-in, color 200ms ease-in;
   z-index: 9999999999999;
 }
-
-.popup .popup__inner .toggle {
-  position: absolute;
-  top: 20px;
-  right: 100px;
-  background: #161623;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup .popup__inner .toggle::before {
-  content: "\f186";
-  font-family: fontAwesome;
-  color: white;
-  font-size: 0.5em;
-}

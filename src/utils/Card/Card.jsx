@@ -1,9 +1,9 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({title, description, setOpenModal, filterItem, serialNo}) => {
+const Card = ({title, description, setOpenModal, filterItem, serialNo, theme}) => {
     return (
-        <div data-item={filterItem} className="card-wrapper" onClick={() => {setOpenModal(true);}}>
+        <div data-item={filterItem}  className={theme.color === "white" ? "card-wrapper-light" : "card-wrapper-dark"} onClick={() => {setOpenModal(true);}}>
             <div className="box">
                 <div className="content">
                     <h2>{serialNo}</h2>

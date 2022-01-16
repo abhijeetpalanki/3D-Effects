@@ -1,22 +1,22 @@
-.filter__wrapper section {
+.filter__wrapper-light section {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   flex-direction: column;
 }
 
-.filter__wrapper section ul {
+.filter__wrapper-light section ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.filter__wrapper section ul li {
+.filter__wrapper-light section ul li {
   list-style: none;
-  background: #1d1d1d;
+  background: var(--dark-background-color);
   color: white;
   border-radius: 18px;
   padding: 12px 20px;
@@ -25,7 +25,40 @@
   cursor: pointer;
 }
 
-.filter__wrapper section ul li.active {
+.filter__wrapper-light section ul li.active {
+  background: #ff0058;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.filter__wrapper-dark section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.filter__wrapper-dark section ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter__wrapper-dark section ul li {
+  list-style: none;
+  background: var(--light-background-color);
+  color: black;
+  border-radius: 18px;
+  padding: 12px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.filter__wrapper-dark section ul li.active {
   background: #ff0058;
   color: white;
   transition: 0.5s ease;

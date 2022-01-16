@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Filter.css';
 
-const Filter = () => {
+const Filter = ({theme}) => {
     useEffect(() => {
         let filterList = document.querySelectorAll('.filter-list');
         let cardWrapper = document.querySelectorAll('.card-wrapper');
@@ -29,7 +29,7 @@ const Filter = () => {
     }, [])
 
     return (
-        <div className="filter__wrapper">
+        <div className={theme.color === "white" ? "filter__wrapper-light" : "filter__wrapper-dark"}>
             <section>
                 <ul>
                     <li className="filter-list active" data-filter="all">All</li>
