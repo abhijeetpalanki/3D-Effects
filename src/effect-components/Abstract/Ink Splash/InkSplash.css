@@ -1,0 +1,19 @@
+.ink-splash__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.ink-splash__wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ink-splash__wrapper video:nth-child(2) {
+  mix-blend-mode: screen;
+  filter: brightness(2);
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator, RankList } from "../../component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator, RankList, InkSplash } from "../../component-imports";
 
 const Layout = ({theme}) => {     
     const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -37,6 +37,7 @@ const Layout = ({theme}) => {
     const [openBalancerModal, setOpenBalancerModal] = useState(false); 
     const [openBatteryIndicatorModal, setOpenBatteryIndicatorModal] = useState(false);
     const [openRankListModal, setOpenRankListModal] = useState(false);
+    const [openInkSplashModal, setOpenInkSplashModal] = useState(false);
 
     return (
         <div className={theme.color === "white" ? "body-light" : "body-dark"}>            
@@ -251,6 +252,12 @@ const Layout = ({theme}) => {
                 {
                     openRankListModal && 
                     <Modal component={<RankList />} closeModal={setOpenRankListModal} />
+                }
+
+                <Card title="Ink Splash" description="An ink bleed transition effect, powered by CSS animations" setOpenModal={setOpenInkSplashModal} filterItem="abstract" serialNo={36} theme={theme} />
+                {
+                    openInkSplashModal && 
+                    <Modal component={<InkSplash />} closeModal={setOpenInkSplashModal} />
                 }
             </div>
         </div>
