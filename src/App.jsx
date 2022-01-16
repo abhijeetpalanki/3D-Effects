@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain } from "./component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer } from "./component-imports";
 
 function App() {   
    const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -35,6 +35,7 @@ function App() {
    const [openDropdownMenuModal, setOpenDropdownMenuModal] = useState(false); 
    const [openMagicMenuModal, setOpenMagicMenuModal] = useState(false); 
    const [openRainModal, setOpenRainModal] = useState(false); 
+   const [openBalancerModal, setOpenBalancerModal] = useState(false); 
 
   return (
       <>
@@ -231,6 +232,12 @@ function App() {
             {
                openRainModal && 
                <Modal component={<Rain />} closeModal={setOpenRainModal} />
+            }
+
+            <Card title="Balancer" description="Physics animations using basic CSS" setOpenModal={setOpenBalancerModal} filterItem="nature" serialNo={33} />
+            {
+               openBalancerModal && 
+               <Modal component={<Balancer />} closeModal={setOpenBalancerModal} />
             }
             </div>
       </>
