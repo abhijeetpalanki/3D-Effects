@@ -4,7 +4,7 @@ import './Filter.css';
 const Filter = ({theme}) => {
     useEffect(() => {
         let filterList = document.querySelectorAll('.filter-list');
-        let cardWrapper = document.querySelectorAll('.card-wrapper');
+        let cardWrapper = document.querySelectorAll('.card-wrapper-dark') || document.querySelectorAll('.card-wrapper-light');
 
         for (let i = 0; i < filterList.length; i++) {
             filterList[i].addEventListener('click', function() {

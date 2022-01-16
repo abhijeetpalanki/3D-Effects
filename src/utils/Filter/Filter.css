@@ -5,6 +5,7 @@
   align-items: center;
   color: black;
   flex-direction: column;
+  padding: 20px 0;
 }
 
 .filter__wrapper-light section ul {
@@ -38,6 +39,7 @@
   align-items: center;
   color: white;
   flex-direction: column;
+  padding: 20px 0;
 }
 
 .filter__wrapper-dark section ul {

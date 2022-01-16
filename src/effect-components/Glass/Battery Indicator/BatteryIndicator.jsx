@@ -11,12 +11,6 @@ const BatteryIndicator = () => {
             percentage.style.width = battery.level * 100 + '%';
             percent.innerHTML = battery.level * 100 + '%';
         })
-
-        let batteryIndSec = document.querySelector('.battery-indicator__wrapper .sec');
-        let toggle = document.querySelector('.popup .popup__inner .toggle');
-        toggle.onclick = function() {
-            batteryIndSec.classList.toggle('dark');
-        }
     }, [])
     return (
         <div className="battery-indicator__wrapper">            

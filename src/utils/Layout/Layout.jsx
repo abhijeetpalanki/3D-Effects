@@ -1,6 +1,5 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator } from "../../component-imports";
-import ThemeContext from './ThemeContext';
 
 const Layout = ({theme}) => {     
     const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -40,7 +39,6 @@ const Layout = ({theme}) => {
 
     return (
         <div className={theme.color === "white" ? "body-light" : "body-dark"}>            
-            <h1 data-text="Creativity" className={theme.color === "white" ? "header-light" : "header-dark"}>Creativity</h1>
             <Filter theme={theme}></Filter>
             
             <div className="cards"> 
