@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer } from "./component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator } from "./component-imports";
 
 function App() {   
    const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -36,6 +36,7 @@ function App() {
    const [openMagicMenuModal, setOpenMagicMenuModal] = useState(false); 
    const [openRainModal, setOpenRainModal] = useState(false); 
    const [openBalancerModal, setOpenBalancerModal] = useState(false); 
+   const [openBatteryIndicatorModal, setOpenBatteryIndicatorModal] = useState(false); 
 
   return (
       <>
@@ -238,6 +239,12 @@ function App() {
             {
                openBalancerModal && 
                <Modal component={<Balancer />} closeModal={setOpenBalancerModal} />
+            }
+
+            <Card title="Battery Indicator" description="A visual indication of the battery's state of charge with mousemove tilt effect" setOpenModal={setOpenBatteryIndicatorModal} filterItem="glass" serialNo={34} />
+            {
+               openBatteryIndicatorModal && 
+               <Modal component={<BatteryIndicator />} closeModal={setOpenBatteryIndicatorModal} />
             }
             </div>
       </>

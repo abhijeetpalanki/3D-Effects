@@ -41,5 +41,6 @@ import Water from './effect-components/Nature/Water Background/Water';
 import Wavy from './effect-components/Nature/Wavy Section/Wavy';
 import Banner from './effect-components/Nature/Banner/Banner';
 import Balancer from './effect-components/Nature/Balancer/Balancer';
+import BatteryIndicator from './effect-components/Glass/Battery Indicator/BatteryIndicator';
 
-export { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer };
+export { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator };
