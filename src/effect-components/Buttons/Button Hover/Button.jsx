@@ -6,7 +6,7 @@ const Button = () => {
         <div className="button__wrapper">
             <div className="container">
                 <div className="btn1">
-                    <a href="!#"><span>Button</span></a>
+                    <a href="!#"><span>Blur</span></a>
                 </div>
                 <div className="btn2">                    
                     <a href="!#">
@@ -14,16 +14,21 @@ const Button = () => {
                         <span></span>
                         <span></span>
                         <span></span>
-                        Button
+                        Border
                     </a>
                 </div>
                 <div className="btn3">
-                    <a href="!#" className="dynamic-link"><span>Button</span></a>
+                    <a href="!#" className="dynamic-link"><span>Glow</span></a>
                 </div>
                 <div className="btn4">
                     <a href="!#">
-                        <span>Button</span>
-                        <span>Button</span>
+                        <span>Zoom</span>
+                        <span>Zoom</span>
+                    </a>
+                </div>
+                <div className="btn5">
+                    <a href="!#">
+                        Pixel
                     </a>
                 </div>
             </div>
