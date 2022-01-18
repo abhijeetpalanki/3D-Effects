@@ -1,0 +1,100 @@
+.slider__wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #a4152c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__wrapper .container .box {
+  width: 1000px;
+  height: 700px;
+  background-color: #1e1e26;
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 20px 10px;
+}
+
+.slider__wrapper .container .box .marvel {
+  color: #32323e;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: bebas kai;
+  font-size: 25px;
+}
+
+.slider__wrapper .container .box .model {
+  height: 350px;
+  max-height: 70%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.slider__wrapper .container .box .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.slider__wrapper .container .box .details p {
+  font-family: calibri;
+  font-weight: bold;
+  color: #6a6a74;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider__wrapper .container .box .details .logo {
+  height: 70px;
+  width: 70px;
+}
+
+.slider__wrapper .container .box:hover {
+  background-color: #17171d;
+  transform-style: preserve-3d;
+  transform: scale(1.02);
+  transition: all ease 0.3s;
+}
+
+.slider__wrapper .container .box:hover .marvel {
+  color: #c0292b;
+  transition: all ease 0.5s;
+}
+
+.carousel .thumbs {
+  display: none;
+}
+
+.carousel .carousel-status {
+  position: relative !important;
+  font-size: 20px !important;
+  top: 10px !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .slider__wrapper .container .box .details {
+    width: 300px;
+  }
+
+  .slider__wrapper .container .box {
+    width: 380px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .slider__wrapper .container .box {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .slider__wrapper .container .box {
+    width: 700px;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator, RankList, InkSplash } from "../../component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator, RankList, InkSplash, Slider, DynamicCalendar } from "../../component-imports";
 
 const Layout = ({theme}) => {     
     const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -38,6 +38,8 @@ const Layout = ({theme}) => {
     const [openBatteryIndicatorModal, setOpenBatteryIndicatorModal] = useState(false);
     const [openRankListModal, setOpenRankListModal] = useState(false);
     const [openInkSplashModal, setOpenInkSplashModal] = useState(false);
+    const [openSliderModal, setOpenSliderModal] = useState(false);
+    const [openCalendarModal, setOpenCalendarModal] = useState(false);
 
     return (
         <div className={theme.color === "white" ? "body-light" : "body-dark"}>            
@@ -170,7 +172,7 @@ const Layout = ({theme}) => {
                     <Modal component={<Banner />} closeModal={setOpenBannerModal} />
                 }
 
-                <Card title="Circular Menu" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenCircularMenuModal} filterItem="menu" serialNo={22} theme={theme} />
+                <Card title="Circular" description="Animated circular menu displaying ring of choices with custom menu icons" setOpenModal={setOpenCircularMenuModal} filterItem="menu" serialNo={22} theme={theme} />
                 {
                     openCircularMenuModal && 
                     <Modal component={<CircularMenu />} closeModal={setOpenCircularMenuModal} />
@@ -218,13 +220,13 @@ const Layout = ({theme}) => {
                     <Modal component={<SkillsBar />} closeModal={setOpenSkillsBarModal} />
                 }
 
-                <Card title="Dropdown Menu" description="A list of choices when an user clicks on the menu's title" setOpenModal={setOpenDropdownMenuModal} filterItem="menu" serialNo={30} theme={theme} />
+                <Card title="Dropdown" description="A list of choices when an user clicks on the menu's title" setOpenModal={setOpenDropdownMenuModal} filterItem="menu" serialNo={30} theme={theme} />
                 {
                     openDropdownMenuModal && 
                     <Modal component={<DropdownMenu />} closeModal={setOpenDropdownMenuModal} />
                 }
 
-                <Card title="Magic Menu Indicator" description="Animated list of options presented to an user that will reveal current page on the website" setOpenModal={setOpenMagicMenuModal} filterItem="menu" serialNo={31} theme={theme} />
+                <Card title="Magic Indicator" description="Animated list of options presented to an user that will reveal current page on the website" setOpenModal={setOpenMagicMenuModal} filterItem="menu" serialNo={31} theme={theme} />
                 {
                     openMagicMenuModal && 
                     <Modal component={<MagicMenu />} closeModal={setOpenMagicMenuModal} />
@@ -258,6 +260,18 @@ const Layout = ({theme}) => {
                 {
                     openInkSplashModal && 
                     <Modal component={<InkSplash />} closeModal={setOpenInkSplashModal} />
+                }
+
+                <Card title="Marvel Slider" description="Presents multiple hero images in sequence, using captions, transitions, and animation" setOpenModal={setOpenSliderModal} filterItem="product" serialNo={37} theme={theme} />
+                {
+                    openSliderModal && 
+                    <Modal component={<Slider />} closeModal={setOpenSliderModal} />
+                }
+
+                <Card title="Dynamic Calendar" description="A chart showing the days, weeks, and months of a particular year, or giving particular seasonal information." setOpenModal={setOpenCalendarModal} filterItem="glass" serialNo={38} theme={theme} />
+                {
+                    openCalendarModal && 
+                    <Modal component={<DynamicCalendar />} closeModal={setOpenCalendarModal} />
                 }
             </div>
         </div>

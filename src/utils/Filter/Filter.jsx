@@ -40,6 +40,7 @@ const Filter = ({theme}) => {
                     <li className="filter-list" data-filter="glass">Glass</li>
                     <li className="filter-list" data-filter="menu">Menu</li>
                     <li className="filter-list" data-filter="nature">Nature</li>
+                    <li className="filter-list" data-filter="product">Product</li>
                 </ul>
             </section>
         </div>
