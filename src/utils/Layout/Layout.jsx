@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator, RankList, InkSplash, Slider, DynamicCalendar } from "../../component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator, RankList, InkSplash, Slider, DynamicCalendar, Ocean } from "../../component-imports";
 
 const Layout = ({theme}) => {     
     const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -40,6 +40,7 @@ const Layout = ({theme}) => {
     const [openInkSplashModal, setOpenInkSplashModal] = useState(false);
     const [openSliderModal, setOpenSliderModal] = useState(false);
     const [openCalendarModal, setOpenCalendarModal] = useState(false);
+    const [openOceanModal, setOpenOceanModal] = useState(false);
 
     return (
         <div className={theme.color === "white" ? "body-light" : "body-dark"}>            
@@ -272,6 +273,12 @@ const Layout = ({theme}) => {
                 {
                     openCalendarModal && 
                     <Modal component={<DynamicCalendar />} closeModal={setOpenCalendarModal} />
+                }
+
+                <Card title="Purify Ocean" description="Animation to keep ocean clean from plastic" setOpenModal={setOpenOceanModal} filterItem="nature" serialNo={39} theme={theme} />
+                {
+                    openOceanModal && 
+                    <Modal component={<Ocean />} closeModal={setOpenOceanModal} />
                 }
             </div>
         </div>
