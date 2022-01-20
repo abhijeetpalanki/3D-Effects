@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator, RankList, InkSplash, Slider, DynamicCalendar, Ocean } from "../../component-imports";
+import { Card, Modal, Filter, BusinessCard, YearChanger, Clock, Leaves, Loader, SocialMediaIcons, GlowingCube, Blob, Particles, Water, Rocket, Wavy, Smiley, Box, Button, GlassCard, Shutter, Greeting, Parallax, Calculator, Banner, CircularMenu, Squares, FontAwesomeIcons, Checkbox, Climb, Shapes, TiltCard, SkillsBar, DropdownMenu, MagicMenu, Rain, Balancer, BatteryIndicator, RankList, InkSplash, Slider, DynamicCalendar, Ocean, ColorPalette } from "../../component-imports";
 
 const Layout = ({theme}) => {     
     const [openBusinessCardModal, setOpenBusinessCardModal] = useState(false); 
@@ -41,6 +41,7 @@ const Layout = ({theme}) => {
     const [openSliderModal, setOpenSliderModal] = useState(false);
     const [openCalendarModal, setOpenCalendarModal] = useState(false);
     const [openOceanModal, setOpenOceanModal] = useState(false);
+    const [openColorPaletteModal, setOpenColorPaletteModal] = useState(false);
 
     return (
         <div className={theme.color === "white" ? "body-light" : "body-dark"}>            
@@ -279,6 +280,12 @@ const Layout = ({theme}) => {
                 {
                     openOceanModal && 
                     <Modal component={<Ocean />} closeModal={setOpenOceanModal} />
+                }
+
+                <Card title="Random Color Palette Generator" description="Generates random colors of lighter shades to darker shades" setOpenModal={setOpenColorPaletteModal} filterItem="buttons" serialNo={40} theme={theme} />
+                {
+                    openColorPaletteModal && 
+                    <Modal component={<ColorPalette />} closeModal={setOpenColorPaletteModal} />
                 }
             </div>
         </div>

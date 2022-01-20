@@ -1,0 +1,98 @@
+.color-palette__wrapper {
+  margin: 0;
+  background: #f1f1f1;
+  min-height: 100vh;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.color-palette__wrapper .palette {
+  position: relative;
+  background: white;
+  width: 45em;
+  height: 25em;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #1f1f1f;
+  padding-top: 5em;
+  box-sizing: border-box;
+}
+
+.color-palette__wrapper .palette button {
+  outline: none;
+  border: none;
+  padding: 0.7em 2em;
+  font-size: 1.1em;
+  position: absolute;
+  top: -1em;
+  transform: translateX(-50%);
+  border-radius: 2em;
+  background: #1f1f1f;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.color-palette__wrapper .palette button:hover {
+  background: white;
+  color: #1f1f1f;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.color-palette__wrapper .palette .colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.color-palette__wrapper .palette .colors > div {
+  width: 25%;
+}
+
+.color-palette__wrapper .palette .colors .color {
+  background: #ccc;
+  height: 18.5em;
+  width: 100%;
+}
+
+.color-palette__wrapper .palette .colors h4 {
+  font-size: 0.9em;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in;
+}
+
+@media screen and (max-width: 500px) {
+  .color-palette__wrapper {
+    padding: 2em;
+  }
+
+  .color-palette__wrapper .palette {
+    height: initial;
+  }
+
+  .color-palette__wrapper .palette .colors {
+    flex-direction: column;
+  }
+
+  .color-palette__wrapper .palette .colors > div {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
