@@ -24,6 +24,13 @@ const ColorPalette = () => {
   }, []);  
 
   return <div className="color-palette__wrapper">
+      <div className="loader">
+        <div className="span-0"></div>
+        <div className="span-1"></div>
+        <div className="span-2"></div>
+        <div className="span-3"></div>
+        <div className="span-4"></div>
+      </div>
       <div className="palette">
         <button onClick={generateColors}>Generate New</button>
         <div className="colors">
