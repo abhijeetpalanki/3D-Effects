@@ -4,14 +4,6 @@ import './Loader.css';
 const Loader = () => {
     return (
         <div className="loader__wrapper">
-            <div className="triangle-loader">
-                <div className="canvas">
-                    <div className="triangle left rotate1" id="p1"></div>
-                    <div className="triangle right" id="p2"></div>
-                    <div className="triangle left" id="p3"></div>
-                    <div className="triangle right" id="p4"></div>
-                </div>
-            </div>
             <div className="ice-cubes-loader">
                 <div className="container">
                     <div className="📦"></div>
@@ -50,8 +42,8 @@ const Loader = () => {
                     </svg>
                 </div>
 
-                <a className="dribbble" href="https://dribbble.com/shots/5878367-Loaders" target="_blank">
-                    <img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt="" />
+                <a className="dribbble" href="!#">
+                    <img src="" alt="" />
                 </a>
             </div>
         </div>
