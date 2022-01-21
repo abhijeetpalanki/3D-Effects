@@ -41,6 +41,7 @@ import CircularMenu from "./effect-components/Menu/Circular Menu/CircularMenu";
 import DropdownMenu from "./effect-components/Menu/Dropdown Menu/DropdownMenu";
 import MagicMenu from "./effect-components/Menu/Magic Menu Indicator/MagicMenu";
 import NavbarMenu from "./effect-components/Menu/Navbar Menu/NavbarMenu";
+import SidebarMenu from "./effect-components/Menu/Sidebar Menu/SidebarMenu";
 
 import Particles from "./effect-components/Nature/Particles/Particles";
 import Water from "./effect-components/Nature/Water Background/Water";
@@ -96,4 +97,5 @@ export {
   Ocean,
   ColorPalette,
   NavbarMenu,
+  SidebarMenu,
 };

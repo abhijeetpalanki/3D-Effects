@@ -44,6 +44,7 @@ import {
   Ocean,
   ColorPalette,
   NavbarMenu,
+  SidebarMenu,
 } from "../../component-imports";
 
 const Layout = ({ theme }) => {
@@ -91,6 +92,7 @@ const Layout = ({ theme }) => {
   const [openOceanModal, setOpenOceanModal] = useState(false);
   const [openColorPaletteModal, setOpenColorPaletteModal] = useState(false);
   const [openNavbarMenuModal, setOpenNavbarMenuModal] = useState(false);
+  const [openSidebarMenuModal, setOpenSidebarMenuModal] = useState(false);
 
   return (
     <div className={theme.color === "white" ? "body-light" : "body-dark"}>
@@ -622,6 +624,21 @@ const Layout = ({ theme }) => {
           <Modal
             component={<NavbarMenu />}
             closeModal={setOpenNavbarMenuModal}
+          />
+        )}
+
+        <Card
+          title="Sidebar"
+          description="A column placed to the right or left of a webpage's primary content area"
+          setOpenModal={setOpenSidebarMenuModal}
+          filterItem="menu"
+          serialNo={42}
+          theme={theme}
+        />
+        {openSidebarMenuModal && (
+          <Modal
+            component={<SidebarMenu />}
+            closeModal={setOpenSidebarMenuModal}
           />
         )}
       </div>

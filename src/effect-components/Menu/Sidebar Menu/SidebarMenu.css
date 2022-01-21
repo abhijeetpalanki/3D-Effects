@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.sidebar__wrapper {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  min-height: 100vh;
+}
+
+.sidebar__wrapper .navigation {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 60px;
+  border-radius: 10px;
+  border-left: 5px solid #4d5bf9;
+  box-sizing: initial;
+  background: #4d5bf9;
+  transition: width 0.5s;
+  overflow-x: hidden;
+}
+.sidebar__wrapper .navigation.active {
+  width: 300px;
+}
+
+.sidebar__wrapper .navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+.sidebar__wrapper .navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.sidebar__wrapper .navigation ul li b:nth-child(1) {
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 100%;
+  background: white;
+  display: none;
+}
+
+.sidebar__wrapper .navigation ul li b:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 20px;
+  background: #4d5bf9;
+}
+
+.sidebar__wrapper .navigation ul li b:nth-child(2) {
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background: white;
+  display: none;
+}
+
+.sidebar__wrapper .navigation ul li b:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 20px;
+  background: #4d5bf9;
+}
+
+.sidebar__wrapper .navigation ul li.active b:nth-child(1),
+.sidebar__wrapper .navigation ul li.active b:nth-child(2) {
+  display: block;
+}
+
+.sidebar__wrapper .navigation ul li.active {
+  background: white;
+}
+
+.sidebar__wrapper .navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar__wrapper .navigation ul li.active a {
+  color: #333;
+}
+
+.sidebar__wrapper .navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.sidebar__wrapper .navigation ul li a .icon ion-icon {
+  font-size: 1.5em;
+}
+
+.sidebar__wrapper .navigation ul li a .title {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  white-space: normal;
+}
+
+.sidebar__wrapper .toggle {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  background: #4d5bf9;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar__wrapper .toggle.active {
+  background: #ff4d89;
+}
+
+.sidebar__wrapper .toggle ion-icon {
+  color: white;
+  font-size: 34px;
+  display: none;
+}
+
+.sidebar__wrapper .toggle .open ion-icon,
+.sidebar__wrapper .toggle.active .close ion-icon {
+  display: block;
+}
+
+.sidebar__wrapper .toggle .close ion-icon,
+.sidebar__wrapper .toggle.active .open ion-icon {
+  display: none;
+}
