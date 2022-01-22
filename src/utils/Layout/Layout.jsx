@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   Card,
-  Modal,
   Filter,
   BusinessCard,
   YearChanger,
@@ -106,13 +105,10 @@ const Layout = ({ theme }) => {
           filterItem="cards"
           serialNo={1}
           theme={theme}
+          openModal={openBusinessCardModal}
+          component={<BusinessCard />}
+          closeModal={setOpenBusinessCardModal}
         />
-        {openBusinessCardModal && (
-          <Modal
-            component={<BusinessCard />}
-            closeModal={setOpenBusinessCardModal}
-          />
-        )}
 
         <Card
           title="Happy New Year"
@@ -121,13 +117,10 @@ const Layout = ({ theme }) => {
           filterItem="buttons"
           serialNo={2}
           theme={theme}
+          openModal={openYearChangerModal}
+          component={<YearChanger />}
+          closeModal={setOpenYearChangerModal}
         />
-        {openYearChangerModal && (
-          <Modal
-            component={<YearChanger />}
-            closeModal={setOpenYearChangerModal}
-          />
-        )}
 
         <Card
           title="Neumorphism Clock"
@@ -136,10 +129,10 @@ const Layout = ({ theme }) => {
           filterItem="glass"
           serialNo={3}
           theme={theme}
+          openModal={openClockModal}
+          component={<Clock />}
+          closeModal={setOpenClockModal}
         />
-        {openClockModal && (
-          <Modal component={<Clock />} closeModal={setOpenClockModal} />
-        )}
 
         <Card
           title="Falling Leaves"
@@ -148,10 +141,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={4}
           theme={theme}
+          openModal={openLeavesModal}
+          component={<Leaves />}
+          closeModal={setOpenLeavesModal}
         />
-        {openLeavesModal && (
-          <Modal component={<Leaves />} closeModal={setOpenLeavesModal} />
-        )}
 
         <Card
           title="Loader"
@@ -160,10 +153,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={5}
           theme={theme}
+          openModal={openLoaderModal}
+          component={<Loader />}
+          closeModal={setOpenLoaderModal}
         />
-        {openLoaderModal && (
-          <Modal component={<Loader />} closeModal={setOpenLoaderModal} />
-        )}
 
         <Card
           title="3D Isometric Icons"
@@ -172,13 +165,10 @@ const Layout = ({ theme }) => {
           filterItem="icons"
           serialNo={6}
           theme={theme}
+          openModal={openSocialMediaIconsModal}
+          component={<SocialMediaIcons />}
+          closeModal={setOpenSocialMediaIconsModal}
         />
-        {openSocialMediaIconsModal && (
-          <Modal
-            component={<SocialMediaIcons />}
-            closeModal={setOpenSocialMediaIconsModal}
-          />
-        )}
 
         <Card
           title="Glowing Cube"
@@ -187,13 +177,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={7}
           theme={theme}
+          openModal={openGlowingCubeModal}
+          component={<GlowingCube />}
+          closeModal={setOpenGlowingCubeModal}
         />
-        {openGlowingCubeModal && (
-          <Modal
-            component={<GlowingCube />}
-            closeModal={setOpenGlowingCubeModal}
-          />
-        )}
 
         <Card
           title="Smooth Animated Blob"
@@ -202,10 +189,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={8}
           theme={theme}
+          openModal={openBlobModal}
+          component={<Blob />}
+          closeModal={setOpenBlobModal}
         />
-        {openBlobModal && (
-          <Modal component={<Blob />} closeModal={setOpenBlobModal} />
-        )}
 
         <Card
           title="Glowing Particles"
@@ -214,10 +201,10 @@ const Layout = ({ theme }) => {
           filterItem="nature"
           serialNo={9}
           theme={theme}
+          openModal={openParticlesModal}
+          component={<Particles />}
+          closeModal={setOpenParticlesModal}
         />
-        {openParticlesModal && (
-          <Modal component={<Particles />} closeModal={setOpenParticlesModal} />
-        )}
 
         <Card
           title="Water Bubbles Background"
@@ -226,10 +213,10 @@ const Layout = ({ theme }) => {
           filterItem="nature"
           serialNo={10}
           theme={theme}
+          openModal={openWaterModal}
+          component={<Water />}
+          closeModal={setOpenWaterModal}
         />
-        {openWaterModal && (
-          <Modal component={<Water />} closeModal={setOpenWaterModal} />
-        )}
 
         <Card
           title="Rocket"
@@ -238,10 +225,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={11}
           theme={theme}
+          openModal={openRocketModal}
+          component={<Rocket />}
+          closeModal={setOpenRocketModal}
         />
-        {openRocketModal && (
-          <Modal component={<Rocket />} closeModal={setOpenRocketModal} />
-        )}
 
         <Card
           title="Oxygen Wave"
@@ -250,10 +237,10 @@ const Layout = ({ theme }) => {
           filterItem="nature"
           serialNo={12}
           theme={theme}
+          openModal={openWaveModal}
+          component={<Wavy />}
+          closeModal={setOpenWaveModal}
         />
-        {openWaveModal && (
-          <Modal component={<Wavy />} closeModal={setOpenWaveModal} />
-        )}
 
         <Card
           title="Smiley Rating Bar"
@@ -262,10 +249,10 @@ const Layout = ({ theme }) => {
           filterItem="buttons"
           serialNo={13}
           theme={theme}
+          openModal={openSmileyModal}
+          component={<Smiley />}
+          closeModal={setOpenSmileyModal}
         />
-        {openSmileyModal && (
-          <Modal component={<Smiley />} closeModal={setOpenSmileyModal} />
-        )}
 
         <Card
           title="Quote Of The Day"
@@ -274,10 +261,10 @@ const Layout = ({ theme }) => {
           filterItem="cards"
           serialNo={14}
           theme={theme}
+          openModal={openBoxModal}
+          component={<Box />}
+          closeModal={setOpenBoxModal}
         />
-        {openBoxModal && (
-          <Modal component={<Box />} closeModal={setOpenBoxModal} />
-        )}
 
         <Card
           title="Button Hover Effects"
@@ -286,10 +273,10 @@ const Layout = ({ theme }) => {
           filterItem="buttons"
           serialNo={15}
           theme={theme}
+          openModal={openButtonModal}
+          component={<Button />}
+          closeModal={setOpenButtonModal}
         />
-        {openButtonModal && (
-          <Modal component={<Button />} closeModal={setOpenButtonModal} />
-        )}
 
         <Card
           title="Glowing Gradient Card"
@@ -298,10 +285,10 @@ const Layout = ({ theme }) => {
           filterItem="cards"
           serialNo={16}
           theme={theme}
+          openModal={openGlassCardModal}
+          component={<GlassCard />}
+          closeModal={setOpenGlassCardModal}
         />
-        {openGlassCardModal && (
-          <Modal component={<GlassCard />} closeModal={setOpenGlassCardModal} />
-        )}
 
         <Card
           title="Glass Shutter"
@@ -310,10 +297,10 @@ const Layout = ({ theme }) => {
           filterItem="glass"
           serialNo={17}
           theme={theme}
+          openModal={openShutterModal}
+          component={<Shutter />}
+          closeModal={setOpenShutterModal}
         />
-        {openShutterModal && (
-          <Modal component={<Shutter />} closeModal={setOpenShutterModal} />
-        )}
 
         <Card
           title="Greeting Card"
@@ -322,10 +309,10 @@ const Layout = ({ theme }) => {
           filterItem="cards"
           serialNo={18}
           theme={theme}
+          openModal={openGreetingModal}
+          component={<Greeting />}
+          closeModal={setOpenGreetingModal}
         />
-        {openGreetingModal && (
-          <Modal component={<Greeting />} closeModal={setOpenGreetingModal} />
-        )}
 
         <Card
           title="Parallax Effect"
@@ -334,10 +321,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={19}
           theme={theme}
+          openModal={openParallaxModal}
+          component={<Parallax />}
+          closeModal={setOpenParallaxModal}
         />
-        {openParallaxModal && (
-          <Modal component={<Parallax />} closeModal={setOpenParallaxModal} />
-        )}
 
         <Card
           title="Calculator"
@@ -346,13 +333,10 @@ const Layout = ({ theme }) => {
           filterItem="glass"
           serialNo={20}
           theme={theme}
+          openModal={openCalculatorModal}
+          component={<Calculator />}
+          closeModal={setOpenCalculatorModal}
         />
-        {openCalculatorModal && (
-          <Modal
-            component={<Calculator />}
-            closeModal={setOpenCalculatorModal}
-          />
-        )}
 
         <Card
           title="Starry Night Banner"
@@ -361,10 +345,10 @@ const Layout = ({ theme }) => {
           filterItem="nature"
           serialNo={21}
           theme={theme}
+          openModal={openBannerModal}
+          component={<Banner />}
+          closeModal={setOpenBannerModal}
         />
-        {openBannerModal && (
-          <Modal component={<Banner />} closeModal={setOpenBannerModal} />
-        )}
 
         <Card
           title="Circular"
@@ -373,13 +357,10 @@ const Layout = ({ theme }) => {
           filterItem="menu"
           serialNo={22}
           theme={theme}
+          openModal={openCircularMenuModal}
+          component={<CircularMenu />}
+          closeModal={setOpenCircularMenuModal}
         />
-        {openCircularMenuModal && (
-          <Modal
-            component={<CircularMenu />}
-            closeModal={setOpenCircularMenuModal}
-          />
-        )}
 
         <Card
           title="Colorful Squares"
@@ -388,10 +369,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={23}
           theme={theme}
+          openModal={openSquaresModal}
+          component={<Squares />}
+          closeModal={setOpenSquaresModal}
         />
-        {openSquaresModal && (
-          <Modal component={<Squares />} closeModal={setOpenSquaresModal} />
-        )}
 
         <Card
           title="Font Awesome Icons"
@@ -400,13 +381,10 @@ const Layout = ({ theme }) => {
           filterItem="icons"
           serialNo={24}
           theme={theme}
+          openModal={openFontAwesomeIconsModal}
+          component={<FontAwesomeIcons />}
+          closeModal={setOpenFontAwesomeIconsModal}
         />
-        {openFontAwesomeIconsModal && (
-          <Modal
-            component={<FontAwesomeIcons />}
-            closeModal={setOpenFontAwesomeIconsModal}
-          />
-        )}
 
         <Card
           title="Checkbox UI"
@@ -415,10 +393,10 @@ const Layout = ({ theme }) => {
           filterItem="buttons"
           serialNo={25}
           theme={theme}
+          openModal={openCheckboxModal}
+          component={<Checkbox />}
+          closeModal={setOpenCheckboxModal}
         />
-        {openCheckboxModal && (
-          <Modal component={<Checkbox />} closeModal={setOpenCheckboxModal} />
-        )}
 
         <Card
           title="Climb"
@@ -427,10 +405,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={26}
           theme={theme}
+          openModal={openClimbModal}
+          component={<Climb />}
+          closeModal={setOpenClimbModal}
         />
-        {openClimbModal && (
-          <Modal component={<Climb />} closeModal={setOpenClimbModal} />
-        )}
 
         <Card
           title="Shapes"
@@ -439,10 +417,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={27}
           theme={theme}
+          openModal={openShapesModal}
+          component={<Shapes />}
+          closeModal={setOpenShapesModal}
         />
-        {openShapesModal && (
-          <Modal component={<Shapes />} closeModal={setOpenShapesModal} />
-        )}
 
         <Card
           title="Mousemove Card"
@@ -451,10 +429,10 @@ const Layout = ({ theme }) => {
           filterItem="cards"
           serialNo={28}
           theme={theme}
+          openModal={openTiltCardModal}
+          component={<TiltCard />}
+          closeModal={setOpenTiltCardModal}
         />
-        {openTiltCardModal && (
-          <Modal component={<TiltCard />} closeModal={setOpenTiltCardModal} />
-        )}
 
         <Card
           title="5 Star Skills Rating Bar"
@@ -463,10 +441,10 @@ const Layout = ({ theme }) => {
           filterItem="buttons"
           serialNo={29}
           theme={theme}
+          openModal={openSkillsBarModal}
+          component={<SkillsBar />}
+          closeModal={setOpenSkillsBarModal}
         />
-        {openSkillsBarModal && (
-          <Modal component={<SkillsBar />} closeModal={setOpenSkillsBarModal} />
-        )}
 
         <Card
           title="Dropdown"
@@ -475,13 +453,10 @@ const Layout = ({ theme }) => {
           filterItem="menu"
           serialNo={30}
           theme={theme}
+          openModal={openDropdownMenuModal}
+          component={<DropdownMenu />}
+          closeModal={setOpenDropdownMenuModal}
         />
-        {openDropdownMenuModal && (
-          <Modal
-            component={<DropdownMenu />}
-            closeModal={setOpenDropdownMenuModal}
-          />
-        )}
 
         <Card
           title="Magic Indicator"
@@ -490,10 +465,10 @@ const Layout = ({ theme }) => {
           filterItem="menu"
           serialNo={31}
           theme={theme}
+          openModal={openMagicMenuModal}
+          component={<MagicMenu />}
+          closeModal={setOpenMagicMenuModal}
         />
-        {openMagicMenuModal && (
-          <Modal component={<MagicMenu />} closeModal={setOpenMagicMenuModal} />
-        )}
 
         <Card
           title="Colorful Rain"
@@ -502,10 +477,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={32}
           theme={theme}
+          openModal={openRainModal}
+          component={<Rain />}
+          closeModal={setOpenRainModal}
         />
-        {openRainModal && (
-          <Modal component={<Rain />} closeModal={setOpenRainModal} />
-        )}
 
         <Card
           title="Balancer"
@@ -514,10 +489,10 @@ const Layout = ({ theme }) => {
           filterItem="nature"
           serialNo={33}
           theme={theme}
+          openModal={openBalancerModal}
+          component={<Balancer />}
+          closeModal={setOpenBalancerModal}
         />
-        {openBalancerModal && (
-          <Modal component={<Balancer />} closeModal={setOpenBalancerModal} />
-        )}
 
         <Card
           title="Battery Indicator"
@@ -526,13 +501,10 @@ const Layout = ({ theme }) => {
           filterItem="glass"
           serialNo={34}
           theme={theme}
+          openModal={openBatteryIndicatorModal}
+          component={<BatteryIndicator />}
+          closeModal={setOpenBatteryIndicatorModal}
         />
-        {openBatteryIndicatorModal && (
-          <Modal
-            component={<BatteryIndicator />}
-            closeModal={setOpenBatteryIndicatorModal}
-          />
-        )}
 
         <Card
           title="Cricketers Rank List"
@@ -541,10 +513,10 @@ const Layout = ({ theme }) => {
           filterItem="glass"
           serialNo={35}
           theme={theme}
+          openModal={openRankListModal}
+          component={<RankList />}
+          closeModal={setOpenRankListModal}
         />
-        {openRankListModal && (
-          <Modal component={<RankList />} closeModal={setOpenRankListModal} />
-        )}
 
         <Card
           title="Ink Splash"
@@ -553,10 +525,10 @@ const Layout = ({ theme }) => {
           filterItem="abstract"
           serialNo={36}
           theme={theme}
+          openModal={openInkSplashModal}
+          component={<InkSplash />}
+          closeModal={setOpenInkSplashModal}
         />
-        {openInkSplashModal && (
-          <Modal component={<InkSplash />} closeModal={setOpenInkSplashModal} />
-        )}
 
         <Card
           title="Marvel Slider"
@@ -565,10 +537,10 @@ const Layout = ({ theme }) => {
           filterItem="product"
           serialNo={37}
           theme={theme}
+          openModal={openSliderModal}
+          component={<Slider />}
+          closeModal={setOpenSliderModal}
         />
-        {openSliderModal && (
-          <Modal component={<Slider />} closeModal={setOpenSliderModal} />
-        )}
 
         <Card
           title="Dynamic Calendar"
@@ -577,13 +549,10 @@ const Layout = ({ theme }) => {
           filterItem="glass"
           serialNo={38}
           theme={theme}
+          openModal={openCalendarModal}
+          component={<DynamicCalendar />}
+          closeModal={setOpenCalendarModal}
         />
-        {openCalendarModal && (
-          <Modal
-            component={<DynamicCalendar />}
-            closeModal={setOpenCalendarModal}
-          />
-        )}
 
         <Card
           title="Purify Ocean"
@@ -592,10 +561,10 @@ const Layout = ({ theme }) => {
           filterItem="nature"
           serialNo={39}
           theme={theme}
+          openModal={openOceanModal}
+          component={<Ocean />}
+          closeModal={setOpenOceanModal}
         />
-        {openOceanModal && (
-          <Modal component={<Ocean />} closeModal={setOpenOceanModal} />
-        )}
 
         <Card
           title="Random Color Palette Generator"
@@ -604,13 +573,10 @@ const Layout = ({ theme }) => {
           filterItem="buttons"
           serialNo={40}
           theme={theme}
+          openModal={openColorPaletteModal}
+          component={<ColorPalette />}
+          closeModal={setOpenColorPaletteModal}
         />
-        {openColorPaletteModal && (
-          <Modal
-            component={<ColorPalette />}
-            closeModal={setOpenColorPaletteModal}
-          />
-        )}
 
         <Card
           title="Navbar"
@@ -619,13 +585,10 @@ const Layout = ({ theme }) => {
           filterItem="menu"
           serialNo={41}
           theme={theme}
+          openModal={openNavbarMenuModal}
+          component={<NavbarMenu />}
+          closeModal={setOpenNavbarMenuModal}
         />
-        {openNavbarMenuModal && (
-          <Modal
-            component={<NavbarMenu />}
-            closeModal={setOpenNavbarMenuModal}
-          />
-        )}
 
         <Card
           title="Sidebar"
@@ -634,13 +597,10 @@ const Layout = ({ theme }) => {
           filterItem="menu"
           serialNo={42}
           theme={theme}
+          openModal={openSidebarMenuModal}
+          component={<SidebarMenu />}
+          closeModal={setOpenSidebarMenuModal}
         />
-        {openSidebarMenuModal && (
-          <Modal
-            component={<SidebarMenu />}
-            closeModal={setOpenSidebarMenuModal}
-          />
-        )}
       </div>
     </div>
   );
