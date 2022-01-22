@@ -44,6 +44,7 @@ import {
   ColorPalette,
   NavbarMenu,
   SidebarMenu,
+  CircleLogo,
 } from "../../component-imports";
 
 const Layout = ({ theme }) => {
@@ -92,6 +93,7 @@ const Layout = ({ theme }) => {
   const [openColorPaletteModal, setOpenColorPaletteModal] = useState(false);
   const [openNavbarMenuModal, setOpenNavbarMenuModal] = useState(false);
   const [openSidebarMenuModal, setOpenSidebarMenuModal] = useState(false);
+  const [openCircleLogoModal, setOpenCircleLogoModal] = useState(false);
 
   return (
     <div className={theme.color === "white" ? "body-light" : "body-dark"}>
@@ -600,6 +602,18 @@ const Layout = ({ theme }) => {
           openModal={openSidebarMenuModal}
           component={<SidebarMenu />}
           closeModal={setOpenSidebarMenuModal}
+        />
+
+        <Card
+          title="Circle Logo"
+          description="Animated circular logo with text revolving around it"
+          setOpenModal={setOpenCircleLogoModal}
+          filterItem="buttons"
+          serialNo={43}
+          theme={theme}
+          openModal={openCircleLogoModal}
+          component={<CircleLogo />}
+          closeModal={setOpenCircleLogoModal}
         />
       </div>
     </div>

@@ -1,5 +1,4 @@
 import Card from "./utils/Card/Card";
-import Modal from "./utils/Modal/Modal";
 import Filter from "./utils/Filter/Filter";
 
 import Leaves from "./effect-components/Abstract/Falling Leaves/Leaves";
@@ -51,10 +50,10 @@ import Balancer from "./effect-components/Nature/Balancer/Balancer";
 import Ocean from "./effect-components/Nature/Ocean/Ocean";
 
 import Slider from "./effect-components/Product/Slider/Slider";
+import CircleLogo from "./effect-components/Buttons/Circle Logo/CircleLogo";
 
 export {
   Card,
-  Modal,
   Filter,
   BusinessCard,
   YearChanger,
@@ -98,4 +97,5 @@ export {
   ColorPalette,
   NavbarMenu,
   SidebarMenu,
+  CircleLogo,
 };
