@@ -9,20 +9,24 @@ const DigitalClock = () => {
 
   useEffect(() => {
     let interval = setInterval(() => {
-      setMinute(new Date().getMinutes());
-
-      if (new Date().getSeconds() > 9) {
-        setSeconds(new Date().getSeconds());
-      } else {
-        setSeconds("0" + new Date().getSeconds());
-      }
-
       if (new Date().getHours() > 12) {
         setHour("0" + (new Date().getHours() - 12));
         setAmpm("PM");
       } else {
         setHour("0" + new Date().getHours());
         setAmpm("AM");
+      }
+
+      if (new Date().getMinutes() > 9) {
+        setMinute(new Date().getMinutes());
+      } else {
+        setMinute("0" + new Date().getMinutes());
+      }
+
+      if (new Date().getSeconds() > 9) {
+        setSeconds(new Date().getSeconds());
+      } else {
+        setSeconds("0" + new Date().getSeconds());
       }
     }, 1000);
 
