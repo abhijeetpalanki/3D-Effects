@@ -45,6 +45,7 @@ import {
   NavbarMenu,
   SidebarMenu,
   CircleLogo,
+  ParticlesText,
 } from "../../component-imports";
 
 const Layout = ({ theme }) => {
@@ -94,6 +95,7 @@ const Layout = ({ theme }) => {
   const [openNavbarMenuModal, setOpenNavbarMenuModal] = useState(false);
   const [openSidebarMenuModal, setOpenSidebarMenuModal] = useState(false);
   const [openCircleLogoModal, setOpenCircleLogoModal] = useState(false);
+  const [openParticlesTextModal, setOpenParticlesTextModal] = useState(false);
 
   return (
     <div className={theme.color === "white" ? "body-light" : "body-dark"}>
@@ -614,6 +616,18 @@ const Layout = ({ theme }) => {
           openModal={openCircleLogoModal}
           component={<CircleLogo />}
           closeModal={setOpenCircleLogoModal}
+        />
+
+        <Card
+          title="Text Particles"
+          description="Manipulation of text using particle animation"
+          setOpenModal={setOpenParticlesTextModal}
+          filterItem="cards"
+          serialNo={44}
+          theme={theme}
+          openModal={openParticlesTextModal}
+          component={<ParticlesText />}
+          closeModal={setOpenParticlesTextModal}
         />
       </div>
     </div>

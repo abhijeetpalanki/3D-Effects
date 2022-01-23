@@ -51,6 +51,7 @@ import Ocean from "./effect-components/Nature/Ocean/Ocean";
 
 import Slider from "./effect-components/Product/Slider/Slider";
 import CircleLogo from "./effect-components/Buttons/Circle Logo/CircleLogo";
+import ParticlesText from "./effect-components/Cards/Particles Text/ParticlesText";
 
 export {
   Card,
@@ -98,4 +99,5 @@ export {
   NavbarMenu,
   SidebarMenu,
   CircleLogo,
+  ParticlesText,
 };
