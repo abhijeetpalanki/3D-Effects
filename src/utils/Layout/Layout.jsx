@@ -47,6 +47,7 @@ import {
   CircleLogo,
   ParticlesText,
   ProductSlider,
+  BMI,
 } from "../../component-imports";
 
 const Layout = ({ theme }) => {
@@ -98,6 +99,7 @@ const Layout = ({ theme }) => {
   const [openCircleLogoModal, setOpenCircleLogoModal] = useState(false);
   const [openParticlesTextModal, setOpenParticlesTextModal] = useState(false);
   const [openProductSliderModal, setOpenProductSliderModal] = useState(false);
+  const [openBMIModal, setOpenBMIModal] = useState(false);
 
   return (
     <div className={theme.color === "white" ? "body-light" : "body-dark"}>
@@ -642,6 +644,18 @@ const Layout = ({ theme }) => {
           openModal={openProductSliderModal}
           component={<ProductSlider />}
           closeModal={setOpenProductSliderModal}
+        />
+
+        <Card
+          title="BMI Calculator"
+          description="A measure of body fat derived from the height and mass of a person"
+          setOpenModal={setOpenBMIModal}
+          filterItem="product"
+          serialNo={46}
+          theme={theme}
+          openModal={openBMIModal}
+          component={<BMI />}
+          closeModal={setOpenBMIModal}
         />
       </div>
     </div>

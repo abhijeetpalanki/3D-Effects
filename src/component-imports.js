@@ -19,12 +19,14 @@ import Button from "./effect-components/Buttons/Button Hover/Button";
 import Checkbox from "./effect-components/Buttons/Animated Checkbox/Checkbox";
 import SkillsBar from "./effect-components/Buttons/Skills Bar/SkillsBar";
 import ColorPalette from "./effect-components/Buttons/Color Palette/ColorPalette";
+import CircleLogo from "./effect-components/Buttons/Circle Logo/CircleLogo";
 
 import BusinessCard from "./effect-components/Cards/Business Card/BusinessCard";
 import Box from "./effect-components/Cards/Creative Box/Box";
 import GlassCard from "./effect-components/Cards/Glass Card/GlassCard";
 import Greeting from "./effect-components/Cards/Greeting/Greeting";
 import TiltCard from "./effect-components/Cards/Tilt Card/TiltCard";
+import ParticlesText from "./effect-components/Cards/Particles Text/ParticlesText";
 
 import SocialMediaIcons from "./effect-components/Icons/Social Media Icons/SocialMediaIcons";
 import FontAwesomeIcons from "./effect-components/Icons/Font Awesome Icons/FontAwesomeIcons";
@@ -35,6 +37,7 @@ import Calculator from "./effect-components/Glass/Calculator/Calculator";
 import RankList from "./effect-components/Glass/Rank List/RankList";
 import BatteryIndicator from "./effect-components/Glass/Battery Indicator/BatteryIndicator";
 import DynamicCalendar from "./effect-components/Glass/Dynamic Calendar/DynamicCalendar";
+import ProductSlider from "./effect-components/Glass/Product Slider/ProductSlider";
 
 import CircularMenu from "./effect-components/Menu/Circular Menu/CircularMenu";
 import DropdownMenu from "./effect-components/Menu/Dropdown Menu/DropdownMenu";
@@ -50,9 +53,7 @@ import Balancer from "./effect-components/Nature/Balancer/Balancer";
 import Ocean from "./effect-components/Nature/Ocean/Ocean";
 
 import Slider from "./effect-components/Product/Slider/Slider";
-import CircleLogo from "./effect-components/Buttons/Circle Logo/CircleLogo";
-import ParticlesText from "./effect-components/Cards/Particles Text/ParticlesText";
-import ProductSlider from "./effect-components/Glass/Product Slider/ProductSlider";
+import BMI from "./effect-components/Product/BMI Calculator/BMI";
 
 export {
   Card,
@@ -102,4 +103,5 @@ export {
   CircleLogo,
   ParticlesText,
   ProductSlider,
+  BMI,
 };

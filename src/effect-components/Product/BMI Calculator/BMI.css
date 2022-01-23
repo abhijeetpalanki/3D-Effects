@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+.bmi__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  font-family: "Lato", sans-serif;
+}
+
+.bmi__wrapper .container {
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 0 12px #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.bmi__wrapper .container input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 8px 4px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.bmi__wrapper .container .btn {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bmi__wrapper .container .btn-outline {
+  background-color: white;
+  color: #333;
+}
+
+.bmi__wrapper .container .center {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.bmi__wrapper .container .center p {
+  margin: 10px 0;
+}
+
+.bmi__wrapper .container .img-container {
+  text-align: center;
+}
+
+.bmi__wrapper .container .img-container img {
+  height: 200px;
+}
