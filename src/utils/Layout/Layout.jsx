@@ -46,6 +46,7 @@ import {
   SidebarMenu,
   CircleLogo,
   ParticlesText,
+  ProductSlider,
 } from "../../component-imports";
 
 const Layout = ({ theme }) => {
@@ -96,6 +97,7 @@ const Layout = ({ theme }) => {
   const [openSidebarMenuModal, setOpenSidebarMenuModal] = useState(false);
   const [openCircleLogoModal, setOpenCircleLogoModal] = useState(false);
   const [openParticlesTextModal, setOpenParticlesTextModal] = useState(false);
+  const [openProductSliderModal, setOpenProductSliderModal] = useState(false);
 
   return (
     <div className={theme.color === "white" ? "body-light" : "body-dark"}>
@@ -628,6 +630,18 @@ const Layout = ({ theme }) => {
           openModal={openParticlesTextModal}
           component={<ParticlesText />}
           closeModal={setOpenParticlesTextModal}
+        />
+
+        <Card
+          title="Product Slider"
+          description="Glass UI for a product card with slider"
+          setOpenModal={setOpenProductSliderModal}
+          filterItem="glass"
+          serialNo={45}
+          theme={theme}
+          openModal={openProductSliderModal}
+          component={<ProductSlider />}
+          closeModal={setOpenProductSliderModal}
         />
       </div>
     </div>
