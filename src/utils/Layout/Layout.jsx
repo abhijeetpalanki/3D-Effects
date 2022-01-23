@@ -48,6 +48,7 @@ import {
   ParticlesText,
   ProductSlider,
   BMI,
+  DigitalClock,
 } from "../../component-imports";
 
 const Layout = ({ theme }) => {
@@ -100,6 +101,7 @@ const Layout = ({ theme }) => {
   const [openParticlesTextModal, setOpenParticlesTextModal] = useState(false);
   const [openProductSliderModal, setOpenProductSliderModal] = useState(false);
   const [openBMIModal, setOpenBMIModal] = useState(false);
+  const [openDigitalClockModal, setOpenDigitalClockModal] = useState(false);
 
   return (
     <div className={theme.color === "white" ? "body-light" : "body-dark"}>
@@ -656,6 +658,18 @@ const Layout = ({ theme }) => {
           openModal={openBMIModal}
           component={<BMI />}
           closeModal={setOpenBMIModal}
+        />
+
+        <Card
+          title="Digital Clock"
+          description="A type of clock that displays the time digitally (i.e. in numerals or other symbols), as opposed to an analogue clock"
+          setOpenModal={setOpenDigitalClockModal}
+          filterItem="glass"
+          serialNo={47}
+          theme={theme}
+          openModal={openDigitalClockModal}
+          component={<DigitalClock />}
+          closeModal={setOpenDigitalClockModal}
         />
       </div>
     </div>

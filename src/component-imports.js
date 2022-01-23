@@ -38,6 +38,7 @@ import RankList from "./effect-components/Glass/Rank List/RankList";
 import BatteryIndicator from "./effect-components/Glass/Battery Indicator/BatteryIndicator";
 import DynamicCalendar from "./effect-components/Glass/Dynamic Calendar/DynamicCalendar";
 import ProductSlider from "./effect-components/Glass/Product Slider/ProductSlider";
+import DigitalClock from "./effect-components/Glass/Digital Clock/DigitalClock";
 
 import CircularMenu from "./effect-components/Menu/Circular Menu/CircularMenu";
 import DropdownMenu from "./effect-components/Menu/Dropdown Menu/DropdownMenu";
@@ -104,4 +105,5 @@ export {
   ParticlesText,
   ProductSlider,
   BMI,
+  DigitalClock,
 };
