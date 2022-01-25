@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Filter.css";
 
 const Filter = ({ theme, filterEffects, buttons }) => {

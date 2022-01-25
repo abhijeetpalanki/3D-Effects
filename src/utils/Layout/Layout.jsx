@@ -86,99 +86,99 @@ const Layout = ({ theme }) => {
       <div className="cards">
         {effects.map((effect) => {
           if (effect.serialNo > 0) {
-            if (effect.serialNo == 1) {
+            if (effect.serialNo === 1) {
               componentModule = <BusinessCard />;
-            } else if (effect.serialNo == 2) {
+            } else if (effect.serialNo === 2) {
               componentModule = <YearChanger />;
-            } else if (effect.serialNo == 3) {
+            } else if (effect.serialNo === 3) {
               componentModule = <Clock />;
-            } else if (effect.serialNo == 4) {
+            } else if (effect.serialNo === 4) {
               componentModule = <Leaves />;
-            } else if (effect.serialNo == 5) {
+            } else if (effect.serialNo === 5) {
               componentModule = <Loader />;
-            } else if (effect.serialNo == 6) {
+            } else if (effect.serialNo === 6) {
               componentModule = <SocialMediaIcons />;
-            } else if (effect.serialNo == 7) {
+            } else if (effect.serialNo === 7) {
               componentModule = <GlowingCube />;
-            } else if (effect.serialNo == 8) {
+            } else if (effect.serialNo === 8) {
               componentModule = <Blob />;
-            } else if (effect.serialNo == 9) {
+            } else if (effect.serialNo === 9) {
               componentModule = <Particles />;
-            } else if (effect.serialNo == 10) {
+            } else if (effect.serialNo === 10) {
               componentModule = <Water />;
-            } else if (effect.serialNo == 11) {
+            } else if (effect.serialNo === 11) {
               componentModule = <Rocket />;
-            } else if (effect.serialNo == 12) {
+            } else if (effect.serialNo === 12) {
               componentModule = <Wavy />;
-            } else if (effect.serialNo == 13) {
+            } else if (effect.serialNo === 13) {
               componentModule = <Smiley />;
-            } else if (effect.serialNo == 14) {
+            } else if (effect.serialNo === 14) {
               componentModule = <Box />;
-            } else if (effect.serialNo == 15) {
+            } else if (effect.serialNo === 15) {
               componentModule = <Button />;
-            } else if (effect.serialNo == 16) {
+            } else if (effect.serialNo === 16) {
               componentModule = <GlassCard />;
-            } else if (effect.serialNo == 17) {
+            } else if (effect.serialNo === 17) {
               componentModule = <Shutter />;
-            } else if (effect.serialNo == 18) {
+            } else if (effect.serialNo === 18) {
               componentModule = <Greeting />;
-            } else if (effect.serialNo == 19) {
+            } else if (effect.serialNo === 19) {
               componentModule = <Parallax />;
-            } else if (effect.serialNo == 20) {
+            } else if (effect.serialNo === 20) {
               componentModule = <Calculator />;
-            } else if (effect.serialNo == 21) {
+            } else if (effect.serialNo === 21) {
               componentModule = <Banner />;
-            } else if (effect.serialNo == 22) {
+            } else if (effect.serialNo === 22) {
               componentModule = <CircularMenu />;
-            } else if (effect.serialNo == 23) {
+            } else if (effect.serialNo === 23) {
               componentModule = <Squares />;
-            } else if (effect.serialNo == 24) {
+            } else if (effect.serialNo === 24) {
               componentModule = <FontAwesomeIcons />;
-            } else if (effect.serialNo == 25) {
+            } else if (effect.serialNo === 25) {
               componentModule = <Checkbox />;
-            } else if (effect.serialNo == 26) {
+            } else if (effect.serialNo === 26) {
               componentModule = <Climb />;
-            } else if (effect.serialNo == 27) {
+            } else if (effect.serialNo === 27) {
               componentModule = <Shapes />;
-            } else if (effect.serialNo == 28) {
+            } else if (effect.serialNo === 28) {
               componentModule = <TiltCard />;
-            } else if (effect.serialNo == 29) {
+            } else if (effect.serialNo === 29) {
               componentModule = <SkillsBar />;
-            } else if (effect.serialNo == 30) {
+            } else if (effect.serialNo === 30) {
               componentModule = <DropdownMenu />;
-            } else if (effect.serialNo == 31) {
+            } else if (effect.serialNo === 31) {
               componentModule = <MagicMenu />;
-            } else if (effect.serialNo == 32) {
+            } else if (effect.serialNo === 32) {
               componentModule = <Rain />;
-            } else if (effect.serialNo == 33) {
+            } else if (effect.serialNo === 33) {
               componentModule = <Balancer />;
-            } else if (effect.serialNo == 34) {
+            } else if (effect.serialNo === 34) {
               componentModule = <BatteryIndicator />;
-            } else if (effect.serialNo == 35) {
+            } else if (effect.serialNo === 35) {
               componentModule = <RankList />;
-            } else if (effect.serialNo == 36) {
+            } else if (effect.serialNo === 36) {
               componentModule = <InkSplash />;
-            } else if (effect.serialNo == 37) {
+            } else if (effect.serialNo === 37) {
               componentModule = <Slider />;
-            } else if (effect.serialNo == 38) {
+            } else if (effect.serialNo === 38) {
               componentModule = <DynamicCalendar />;
-            } else if (effect.serialNo == 39) {
+            } else if (effect.serialNo === 39) {
               componentModule = <Ocean />;
-            } else if (effect.serialNo == 40) {
+            } else if (effect.serialNo === 40) {
               componentModule = <ColorPalette />;
-            } else if (effect.serialNo == 41) {
+            } else if (effect.serialNo === 41) {
               componentModule = <NavbarMenu />;
-            } else if (effect.serialNo == 42) {
+            } else if (effect.serialNo === 42) {
               componentModule = <SidebarMenu />;
-            } else if (effect.serialNo == 43) {
+            } else if (effect.serialNo === 43) {
               componentModule = <CircleLogo />;
-            } else if (effect.serialNo == 44) {
+            } else if (effect.serialNo === 44) {
               componentModule = <ParticlesText />;
-            } else if (effect.serialNo == 45) {
+            } else if (effect.serialNo === 45) {
               componentModule = <ProductSlider />;
-            } else if (effect.serialNo == 46) {
+            } else if (effect.serialNo === 46) {
               componentModule = <BMI />;
-            } else if (effect.serialNo == 47) {
+            } else if (effect.serialNo === 47) {
               componentModule = <DigitalClock />;
             }
           }
