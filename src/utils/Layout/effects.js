@@ -1,16 +1,68 @@
-export default [
+import {
+  BusinessCard,
+  YearChanger,
+  Clock,
+  Leaves,
+  Loader,
+  SocialMediaIcons,
+  GlowingCube,
+  Blob,
+  Particles,
+  Water,
+  Rocket,
+  Wavy,
+  Smiley,
+  Box,
+  Button,
+  GlassCard,
+  Shutter,
+  Greeting,
+  Parallax,
+  Calculator,
+  Banner,
+  CircularMenu,
+  Squares,
+  FontAwesomeIcons,
+  Checkbox,
+  Climb,
+  Shapes,
+  TiltCard,
+  SkillsBar,
+  DropdownMenu,
+  MagicMenu,
+  Rain,
+  Balancer,
+  BatteryIndicator,
+  RankList,
+  InkSplash,
+  Slider,
+  DynamicCalendar,
+  Ocean,
+  ColorPalette,
+  NavbarMenu,
+  SidebarMenu,
+  CircleLogo,
+  ParticlesText,
+  ProductSlider,
+  BMI,
+  DigitalClock,
+} from "../../component-imports";
+
+const items = [
   {
     serialNo: 1,
     title: "Business",
     description:
       "A small card printed with one's name, email address, and contact information.",
     filterItem: "cards",
+    component: <BusinessCard />,
   },
   {
     serialNo: 2,
     title: "Happy New Year",
     description: "Animation gradually changes from 2021 to 2022 on hover",
     filterItem: "buttons",
+    component: <YearChanger />,
   },
   {
     serialNo: 3,
@@ -18,12 +70,14 @@ export default [
     description:
       "New visually pleasing cool trend in a design inspired by Skeuomorphism with a more minimal approach Neumorphism (New+Skeuomorphism)",
     filterItem: "glass",
+    component: <Clock />,
   },
   {
     serialNo: 4,
     title: "Falling Leaves",
     description: "Emulate autumn leaves falling only using css animations",
     filterItem: "abstract",
+    component: <Leaves />,
   },
   {
     serialNo: 5,
@@ -31,6 +85,7 @@ export default [
     description:
       "Used for notifications that reassure users that the system is still handling their request",
     filterItem: "abstract",
+    component: <Loader />,
   },
   {
     serialNo: 6,
@@ -38,30 +93,35 @@ export default [
     description:
       "Isometric design for shorthand symbols that link to company's profile on different networks",
     filterItem: "icons",
+    component: <SocialMediaIcons />,
   },
   {
     serialNo: 7,
     title: "Glowing Cube",
     description: "Ambient light 3D glowing cube with text animation effect",
     filterItem: "abstract",
+    component: <GlowingCube />,
   },
   {
     serialNo: 8,
     title: "Smooth Animated Blob",
     description: "Blob animation effect using SVG",
     filterItem: "abstract",
+    component: <Blob />,
   },
   {
     serialNo: 9,
     title: "Glowing Particles",
     description: "Random particles background animation effect",
     filterItem: "nature",
+    component: <Particles />,
   },
   {
     serialNo: 10,
     title: "Water Bubbles Background",
     description: "Background animation with creative water bubbles",
     filterItem: "nature",
+    component: <Water />,
   },
   {
     serialNo: 11,
@@ -69,12 +129,14 @@ export default [
     description:
       "Also known as image carousels or slideshows are a convenient way to display multiple images, videos, or graphics",
     filterItem: "abstract",
+    component: <Rocket />,
   },
   {
     serialNo: 12,
     title: "Oxygen Wave",
     description: "A water wave with oxygen text hover effect",
     filterItem: "nature",
+    component: <Wavy />,
   },
   {
     serialNo: 13,
@@ -82,36 +144,42 @@ export default [
     description:
       "A simple rating bar which displays animated smileys as rating icon",
     filterItem: "buttons",
+    component: <Smiley />,
   },
   {
     serialNo: 14,
     title: "Quote Of The Day",
     description: "Creative design with hover animation effect",
     filterItem: "cards",
+    component: <Box />,
   },
   {
     serialNo: 15,
     title: "Button Hover Effects",
     description: "Various hover effects and animations for buttons",
     filterItem: "buttons",
+    component: <Button />,
   },
   {
     serialNo: 16,
     title: "Glowing Gradient Card",
     description: "Various hover effects and animations for buttons",
     filterItem: "cards",
+    component: <GlassCard />,
   },
   {
     serialNo: 17,
     title: "Glass Shutter",
     description: "Shutter effect based on progress bar",
     filterItem: "glass",
+    component: <Shutter />,
   },
   {
     serialNo: 18,
     title: "Greeting Card",
     description: "Greeting - 3D foldable card on hover",
     filterItem: "cards",
+    component: <Greeting />,
   },
   {
     serialNo: 19,
@@ -119,18 +187,21 @@ export default [
     description:
       "An effect where background images move past the camera more slowly than foreground images, creating an illusion of depth in a 2D scene of distance. (NOT SUPPORTED IN MOBILE BROWSERS)",
     filterItem: "abstract",
+    component: <Parallax />,
   },
   {
     serialNo: 20,
     title: "Calculator",
     description: "Basic functional calculator with animations",
     filterItem: "glass",
+    component: <Calculator />,
   },
   {
     serialNo: 21,
     title: "Starry Night Banner",
     description: "Banner with clouds and stars animation effect",
     filterItem: "nature",
+    component: <Banner />,
   },
   {
     serialNo: 22,
@@ -138,6 +209,7 @@ export default [
     description:
       "Animated circular menu displaying ring of choices with custom menu icons",
     filterItem: "menu",
+    component: <CircularMenu />,
   },
   {
     serialNo: 23,
@@ -145,48 +217,56 @@ export default [
     description:
       "Animated background animation which randomly creates colorful squares",
     filterItem: "abstract",
+    component: <Squares />,
   },
   {
     serialNo: 24,
     title: "Font Awesome Icons",
     description: "Animated background animation using font-awesome icons",
     filterItem: "icons",
+    component: <FontAwesomeIcons />,
   },
   {
     serialNo: 25,
     title: "Checkbox UI",
     description: "Animated checkbox UI animation",
     filterItem: "buttons",
+    component: <Checkbox />,
   },
   {
     serialNo: 26,
     title: "Climb",
     description: "A box climbing up the hill animation",
     filterItem: "abstract",
+    component: <Climb />,
   },
   {
     serialNo: 27,
     title: "Shapes",
     description: "A set of square and circlular shaped objects floating around",
     filterItem: "abstract",
+    component: <Shapes />,
   },
   {
     serialNo: 28,
     title: "Mousemove Card",
     description: "3D card with parallax and tilt effect on mousemove",
     filterItem: "cards",
+    component: <TiltCard />,
   },
   {
     serialNo: 29,
     title: "5 Star Skills Rating Bar",
     description: "A scale used to display skills in one's technology stack",
     filterItem: "buttons",
+    component: <SkillsBar />,
   },
   {
     serialNo: 30,
     title: "Dropdown",
     description: "A list of choices when an user clicks on the menu's title",
     filterItem: "menu",
+    component: <DropdownMenu />,
   },
   {
     serialNo: 31,
@@ -194,18 +274,21 @@ export default [
     description:
       "Animated list of options presented to an user that will reveal current page on the website",
     filterItem: "menu",
+    component: <MagicMenu />,
   },
   {
     serialNo: 32,
     title: "Colorful Rain",
     description: "Animated rain with randomized color",
     filterItem: "abstract",
+    component: <Rain />,
   },
   {
     serialNo: 33,
     title: "Balancer",
     description: "Physics animations using basic CSS",
     filterItem: "nature",
+    component: <Balancer />,
   },
   {
     serialNo: 34,
@@ -213,6 +296,7 @@ export default [
     description:
       "A visual indication of the battery's state of charge with mousemove tilt effect",
     filterItem: "glass",
+    component: <BatteryIndicator />,
   },
   {
     serialNo: 35,
@@ -220,12 +304,14 @@ export default [
     description:
       "A list of the famous cricketers made by an official organization",
     filterItem: "glass",
+    component: <RankList />,
   },
   {
     serialNo: 36,
     title: "Ink Splash",
     description: "An ink bleed transition effect, powered by CSS animations",
     filterItem: "abstract",
+    component: <InkSplash />,
   },
   {
     serialNo: 37,
@@ -233,6 +319,7 @@ export default [
     description:
       "Presents multiple hero images in sequence, using captions, transitions, and animation",
     filterItem: "product",
+    component: <Slider />,
   },
   {
     serialNo: 38,
@@ -240,24 +327,28 @@ export default [
     description:
       "A chart showing the days, weeks, and months of a particular year, or giving particular seasonal information",
     filterItem: "glass",
+    component: <DynamicCalendar />,
   },
   {
     serialNo: 39,
     title: "Purify Ocean",
     description: "Animation to keep ocean clean from plastic",
     filterItem: "nature",
+    component: <Ocean />,
   },
   {
     serialNo: 40,
     title: "Random Color Palette Generator",
     description: "Generates random colors of lighter shades to darker shades",
     filterItem: "buttons",
+    component: <ColorPalette />,
   },
   {
     serialNo: 41,
     title: "Navbar",
     description: "Animation effects when an user hovers on a list of options",
     filterItem: "menu",
+    component: <NavbarMenu />,
   },
   {
     serialNo: 42,
@@ -265,24 +356,28 @@ export default [
     description:
       "A column placed to the right or left of a webpage's primary content area",
     filterItem: "menu",
+    component: <SidebarMenu />,
   },
   {
     serialNo: 43,
     title: "Circle Logo",
     description: "Animated circular logo with text revolving around it",
     filterItem: "buttons",
+    component: <CircleLogo />,
   },
   {
     serialNo: 44,
     title: "Text Particles",
     description: "Manipulation of text using particle animation",
     filterItem: "cards",
+    component: <ParticlesText />,
   },
   {
     serialNo: 45,
     title: "Product Slider",
     description: "Glass UI for a product card with slider",
     filterItem: "glass",
+    component: <ProductSlider />,
   },
   {
     serialNo: 46,
@@ -290,6 +385,7 @@ export default [
     description:
       "A measure of body fat derived from the height and mass of a person",
     filterItem: "product",
+    component: <BMI />,
   },
   {
     serialNo: 47,
@@ -297,5 +393,8 @@ export default [
     description:
       "A type of clock that displays the time digitally (i.e. in numerals or other symbols), as opposed to an analogue clock",
     filterItem: "glass",
+    component: <DigitalClock />,
   },
 ];
+
+export default items;
