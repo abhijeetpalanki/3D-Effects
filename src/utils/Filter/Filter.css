@@ -58,10 +58,10 @@
   margin: 5px;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
 }
 
-.filter__wrapper-dark section ul li.active {
+.filter__wrapper-dark section ul li:hover {
   background: #ff0058;
   color: white;
-  transition: 0.5s ease;
 }

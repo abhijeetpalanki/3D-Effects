@@ -1,28 +1,26 @@
 import React from "react";
 import "./Card.css";
 import Modal from "./Modal/Modal";
+import useModal from "./../Hooks/useModal";
 
 const Card = ({
   title,
   description,
-  openModal,
-  setOpenModal,
   filterItem,
   serialNo,
   theme,
   component,
-  closeModal,
 }) => {
+  const { isShowing, toggle } = useModal();
+
   return (
     <>
       <div
+        onClick={toggle}
         data-item={filterItem}
         className={
           theme.color === "white" ? "card-wrapper-light" : "card-wrapper-dark"
         }
-        onClick={() => {
-          setOpenModal(true);
-        }}
       >
         <div className="box">
           <div className="content">
@@ -33,7 +31,7 @@ const Card = ({
         </div>
       </div>
 
-      {openModal && <Modal component={component} closeModal={closeModal} />}
+      <Modal component={component} hide={toggle} isShowing={isShowing} />
     </>
   );
 };

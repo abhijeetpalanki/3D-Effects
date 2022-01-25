@@ -1,50 +1,26 @@
-import React, { useEffect } from 'react';
-import './Filter.css';
+import React, { useEffect, useState } from "react";
+import "./Filter.css";
 
-const Filter = ({theme}) => {
-    useEffect(() => {
-        let filterList = document.querySelectorAll('.filter-list');
-        let cardWrapper = document.querySelectorAll('.card-wrapper-dark') || document.querySelectorAll('.card-wrapper-light');
+const Filter = ({ theme, filterEffects, buttons }) => {
+  return (
+    <div
+      className={
+        theme.color === "white"
+          ? "filter__wrapper-light"
+          : "filter__wrapper-dark"
+      }
+    >
+      <section>
+        <ul>
+          {buttons.map((item, itemIdx) => (
+            <li key={itemIdx} onClick={() => filterEffects(item)}>
+              {item.toUpperCase()}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  );
+};
 
-        for (let i = 0; i < filterList.length; i++) {
-            filterList[i].addEventListener('click', function() {
-                for (let j = 0; j < filterList.length; j++) {
-                    filterList[j].classList.remove('active');
-                }
-                this.classList.add('active');
-
-                let dataFilter = this.getAttribute('data-filter');
-
-                for (let k = 0; k < cardWrapper.length; k++) {
-                    cardWrapper[k].classList.remove('active');  
-                    cardWrapper[k].classList.add('hide');  
-
-                    if (cardWrapper[k].getAttribute('data-item') === dataFilter || dataFilter === "all") {
-                        cardWrapper[k].classList.remove('hide');
-                        cardWrapper[k].classList.add('active');
-                    }
-                }
-            })            
-        }
-    }, [])
-
-    return (
-        <div className={theme.color === "white" ? "filter__wrapper-light" : "filter__wrapper-dark"}>
-            <section>
-                <ul>
-                    <li className="filter-list active" data-filter="all">All</li>
-                    <li className="filter-list" data-filter="abstract">Abstract</li>
-                    <li className="filter-list" data-filter="buttons">Buttons</li>
-                    <li className="filter-list" data-filter="cards">Cards</li>
-                    <li className="filter-list" data-filter="icons">Icons</li>
-                    <li className="filter-list" data-filter="glass">Glass</li>
-                    <li className="filter-list" data-filter="menu">Menu</li>
-                    <li className="filter-list" data-filter="nature">Nature</li>
-                    <li className="filter-list" data-filter="product">Product</li>
-                </ul>
-            </section>
-        </div>
-    )
-}
-
-export default Filter
+export default Filter;
