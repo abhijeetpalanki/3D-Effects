@@ -31,6 +31,8 @@ import ParticlesText from "./effect-components/Cards/Particles Text/ParticlesTex
 import SocialMediaIcons from "./effect-components/Icons/Social Media Icons/SocialMediaIcons";
 import FontAwesomeIcons from "./effect-components/Icons/Font Awesome Icons/FontAwesomeIcons";
 
+import TicTacToe from "./effect-components/Games/Tic Tac Toe/TicTacToe";
+
 import Clock from "./effect-components/Glass/Clock/Clock";
 import Shutter from "./effect-components/Glass/Shutter/Shutter";
 import Calculator from "./effect-components/Glass/Calculator/Calculator";
@@ -106,4 +108,5 @@ export {
   ProductSlider,
   BMI,
   DigitalClock,
+  TicTacToe,
 };

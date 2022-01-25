@@ -46,6 +46,7 @@ import {
   ProductSlider,
   BMI,
   DigitalClock,
+  TicTacToe,
 } from "../../component-imports";
 
 const items = [
@@ -394,6 +395,14 @@ const items = [
       "A type of clock that displays the time digitally (i.e. in numerals or other symbols), as opposed to an analogue clock",
     filterItem: "glass",
     component: <DigitalClock />,
+  },
+  {
+    serialNo: 48,
+    title: "Tic Tac Toe",
+    description:
+      "A game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares.",
+    filterItem: "games",
+    component: <TicTacToe />,
   },
 ];
 
