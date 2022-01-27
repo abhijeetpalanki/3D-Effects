@@ -48,6 +48,7 @@ import {
   DigitalClock,
   TicTacToe,
   ConfettiGenerator,
+  Slime,
 } from "../../component-imports";
 
 const items = [
@@ -411,6 +412,13 @@ const items = [
     description: "Small pieces of colored paper thrown during a celebration",
     filterItem: "abstract",
     component: <ConfettiGenerator />,
+  },
+  {
+    serialNo: 50,
+    title: "Slime",
+    description: "A viscid or sticky substance dripping using SVFG filters",
+    filterItem: "nature",
+    component: <Slime />,
   },
 ];
 

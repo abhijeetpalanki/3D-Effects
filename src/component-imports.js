@@ -58,6 +58,7 @@ import Ocean from "./effect-components/Nature/Ocean/Ocean";
 
 import Slider from "./effect-components/Product/Slider/Slider";
 import BMI from "./effect-components/Product/BMI Calculator/BMI";
+import Slime from "./effect-components/Nature/Slime/Slime";
 
 export {
   Card,
@@ -111,4 +112,5 @@ export {
   DigitalClock,
   TicTacToe,
   ConfettiGenerator,
+  Slime,
 };
