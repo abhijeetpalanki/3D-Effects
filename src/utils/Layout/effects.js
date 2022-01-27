@@ -47,6 +47,7 @@ import {
   BMI,
   DigitalClock,
   TicTacToe,
+  ConfettiGenerator,
 } from "../../component-imports";
 
 const items = [
@@ -403,6 +404,13 @@ const items = [
       "Two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares",
     filterItem: "games",
     component: <TicTacToe />,
+  },
+  {
+    serialNo: 49,
+    title: "Confetti",
+    description: "Small pieces of colored paper thrown during a celebration",
+    filterItem: "abstract",
+    component: <ConfettiGenerator />,
   },
 ];
 

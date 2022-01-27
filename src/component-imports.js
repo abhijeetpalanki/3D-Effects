@@ -12,6 +12,7 @@ import Climb from "./effect-components/Abstract/Climb/Climb";
 import Shapes from "./effect-components/Abstract/Shapes/Shapes";
 import Rain from "./effect-components/Abstract/Colorful Rain/Rain";
 import InkSplash from "./effect-components/Abstract/Ink Splash/InkSplash";
+import ConfettiGenerator from "./effect-components/Abstract/Confetti/Confetti";
 
 import YearChanger from "./effect-components/Buttons/Year Changer/YearChanger";
 import Smiley from "./effect-components/Buttons/Smiley Bar/Smiley";
@@ -109,4 +110,5 @@ export {
   BMI,
   DigitalClock,
   TicTacToe,
+  ConfettiGenerator,
 };
