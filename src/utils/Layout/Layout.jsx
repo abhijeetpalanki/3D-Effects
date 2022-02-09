@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Card, Filter } from "../../component-imports";
 import items from "./effects";
+import { motion, AnimatePresence } from "framer-motion";
 
 const allFilterItems = [
   "all",
@@ -31,21 +32,23 @@ const Layout = ({ theme }) => {
         buttons={buttons}
       ></Filter>
 
-      <div className="cards">
-        {effects.map((effect) => {
-          return (
-            <Card
-              key={effect.serialNo}
-              serialNo={effect.serialNo}
-              title={effect.title}
-              description={effect.description}
-              filterItem={effect.filterItem}
-              theme={theme}
-              component={effect.component}
-            />
-          );
-        })}
-      </div>
+      <motion.div layout className="cards">
+        <AnimatePresence>
+          {effects.map((effect) => {
+            return (
+              <Card
+                key={effect.serialNo}
+                serialNo={effect.serialNo}
+                title={effect.title}
+                description={effect.description}
+                filterItem={effect.filterItem}
+                theme={theme}
+                component={effect.component}
+              />
+            );
+          })}
+        </AnimatePresence>
+      </motion.div>
     </div>
   );
 };
