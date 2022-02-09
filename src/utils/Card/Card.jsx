@@ -2,6 +2,7 @@ import React from "react";
 import "./Card.css";
 import Modal from "./Modal/Modal";
 import useModal from "./../Hooks/useModal";
+import { motion } from "framer-motion";
 
 const Card = ({
   title,
@@ -14,7 +15,12 @@ const Card = ({
   const { isShowing, toggle } = useModal();
 
   return (
-    <>
+    <motion.div
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      layout
+    >
       <div
         onClick={toggle}
         data-item={filterItem}
@@ -32,7 +38,7 @@ const Card = ({
       </div>
 
       <Modal component={component} hide={toggle} isShowing={isShowing} />
-    </>
+    </motion.div>
   );
 };
 
